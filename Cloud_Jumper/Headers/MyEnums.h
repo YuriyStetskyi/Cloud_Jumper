@@ -1,0 +1,15 @@
+#pragma once
+
+
+enum DrawLayer
+{
+	BACKGROUND,
+	PLATFORMS,
+	PICKUPS,
+	PROJECTILES,
+	ENEMIES,
+	SCORE,
+	PLAYER,
+	SHIELD,
+	COINS
+};

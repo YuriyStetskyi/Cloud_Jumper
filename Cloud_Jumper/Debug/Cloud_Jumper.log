@@ -1,0 +1,826 @@
+﻿  glad.c
+  Actor.cpp
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(38,18): error C2039: 'acosf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(38,18): error C3861: 'acosf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(42,18): error C2039: 'acoshf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(42,18): error C3861: 'acoshf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(46,18): error C2039: 'asinf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(46,18): error C3861: 'asinf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(50,18): error C2039: 'asinhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(50,18): error C3861: 'asinhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(54,18): error C2039: 'atanf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(54,18): error C3861: 'atanf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(58,18): error C2039: 'atanhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(58,18): error C3861: 'atanhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(62,18): error C2039: 'atan2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(62,18): error C3861: 'atan2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(66,18): error C2039: 'cbrtf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(66,18): error C3861: 'cbrtf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(90,18): error C2039: 'cosf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(90,18): error C3861: 'cosf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(94,18): error C2039: 'coshf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(94,18): error C3861: 'coshf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(98,18): error C2039: 'erff': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(98,18): error C3861: 'erff': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(102,18): error C2039: 'erfcf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(102,18): error C3861: 'erfcf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(106,18): error C2039: 'expf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(106,18): error C3861: 'expf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(110,18): error C2039: 'exp2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(110,18): error C3861: 'exp2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(114,18): error C2039: 'expm1f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(114,18): error C3861: 'expm1f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(118,18): error C2039: 'fabsf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(118,18): error C3861: 'fabsf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(122,18): error C2039: 'fdimf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(122,18): error C3861: 'fdimf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(136,18): error C2039: 'fmaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(136,18): error C3861: 'fmaf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(140,18): error C2039: 'fmaxf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(140,18): error C3861: 'fmaxf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(144,18): error C2039: 'fminf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(144,18): error C3861: 'fminf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(148,18): error C2039: 'fmodf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(148,18): error C3861: 'fmodf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(152,18): error C2039: 'frexpf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(152,18): error C3861: 'frexpf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(156,18): error C2039: 'hypotf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(156,18): error C3861: 'hypotf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(160,18): error C2039: 'ilogbf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(160,18): error C3861: 'ilogbf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(164,18): error C2039: 'ldexpf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(164,18): error C3861: 'ldexpf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(168,18): error C2039: 'lgammaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(168,18): error C3861: 'lgammaf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(172,18): error C2039: 'llrintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(172,18): error C3861: 'llrintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(176,18): error C2039: 'llroundf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(176,18): error C3861: 'llroundf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(180,18): error C2039: 'logf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(180,18): error C3861: 'logf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(184,18): error C2039: 'log10f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(184,18): error C3861: 'log10f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(188,18): error C2039: 'log1pf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(188,18): error C3861: 'log1pf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(192,18): error C2039: 'log2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(192,18): error C3861: 'log2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(196,18): error C2039: 'logbf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(196,18): error C3861: 'logbf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(200,18): error C2039: 'lrintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(200,18): error C3861: 'lrintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(204,18): error C2039: 'lroundf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(204,18): error C3861: 'lroundf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(208,18): error C2039: 'modff': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(208,18): error C3861: 'modff': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(212,18): error C2039: 'nearbyintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(212,18): error C3861: 'nearbyintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(216,18): error C2039: 'nextafterf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(216,18): error C3861: 'nextafterf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(220,18): error C2039: 'nexttowardf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(220,18): error C3861: 'nexttowardf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(224,18): error C2039: 'powf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(224,18): error C3861: 'powf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(228,18): error C2039: 'remainderf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(228,18): error C3861: 'remainderf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(232,18): error C2039: 'remquof': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(232,18): error C3861: 'remquof': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(236,18): error C2039: 'rintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(236,18): error C3861: 'rintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(250,18): error C2039: 'scalblnf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(250,18): error C3861: 'scalblnf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(254,18): error C2039: 'scalbnf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(254,18): error C3861: 'scalbnf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(258,18): error C2039: 'sinf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(258,18): error C3861: 'sinf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(262,18): error C2039: 'sinhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(262,18): error C3861: 'sinhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(266,18): error C2039: 'sqrtf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(266,18): error C3861: 'sqrtf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(270,18): error C2039: 'tanf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(270,18): error C3861: 'tanf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(274,18): error C2039: 'tanhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(274,18): error C3861: 'tanhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(278,18): error C2039: 'tgammaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(278,25): fatal  error C1003: error count exceeds 100; stopping compilation
+  Drawer.cpp
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(38,18): error C2039: 'acosf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(38,18): error C3861: 'acosf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(42,18): error C2039: 'acoshf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(42,18): error C3861: 'acoshf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(46,18): error C2039: 'asinf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(46,18): error C3861: 'asinf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(50,18): error C2039: 'asinhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(50,18): error C3861: 'asinhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(54,18): error C2039: 'atanf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(54,18): error C3861: 'atanf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(58,18): error C2039: 'atanhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(58,18): error C3861: 'atanhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(62,18): error C2039: 'atan2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(62,18): error C3861: 'atan2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(66,18): error C2039: 'cbrtf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(66,18): error C3861: 'cbrtf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(90,18): error C2039: 'cosf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(90,18): error C3861: 'cosf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(94,18): error C2039: 'coshf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(94,18): error C3861: 'coshf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(98,18): error C2039: 'erff': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(98,18): error C3861: 'erff': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(102,18): error C2039: 'erfcf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(102,18): error C3861: 'erfcf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(106,18): error C2039: 'expf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(106,18): error C3861: 'expf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(110,18): error C2039: 'exp2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(110,18): error C3861: 'exp2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(114,18): error C2039: 'expm1f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(114,18): error C3861: 'expm1f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(118,18): error C2039: 'fabsf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(118,18): error C3861: 'fabsf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(122,18): error C2039: 'fdimf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(122,18): error C3861: 'fdimf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(136,18): error C2039: 'fmaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(136,18): error C3861: 'fmaf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(140,18): error C2039: 'fmaxf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(140,18): error C3861: 'fmaxf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(144,18): error C2039: 'fminf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(144,18): error C3861: 'fminf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(148,18): error C2039: 'fmodf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(148,18): error C3861: 'fmodf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(152,18): error C2039: 'frexpf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(152,18): error C3861: 'frexpf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(156,18): error C2039: 'hypotf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(156,18): error C3861: 'hypotf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(160,18): error C2039: 'ilogbf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(160,18): error C3861: 'ilogbf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(164,18): error C2039: 'ldexpf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(164,18): error C3861: 'ldexpf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(168,18): error C2039: 'lgammaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(168,18): error C3861: 'lgammaf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(172,18): error C2039: 'llrintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(172,18): error C3861: 'llrintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(176,18): error C2039: 'llroundf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(176,18): error C3861: 'llroundf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(180,18): error C2039: 'logf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(180,18): error C3861: 'logf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(184,18): error C2039: 'log10f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(184,18): error C3861: 'log10f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(188,18): error C2039: 'log1pf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(188,18): error C3861: 'log1pf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(192,18): error C2039: 'log2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(192,18): error C3861: 'log2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(196,18): error C2039: 'logbf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(196,18): error C3861: 'logbf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(200,18): error C2039: 'lrintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(200,18): error C3861: 'lrintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(204,18): error C2039: 'lroundf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(204,18): error C3861: 'lroundf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(208,18): error C2039: 'modff': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(208,18): error C3861: 'modff': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(212,18): error C2039: 'nearbyintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(212,18): error C3861: 'nearbyintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(216,18): error C2039: 'nextafterf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(216,18): error C3861: 'nextafterf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(220,18): error C2039: 'nexttowardf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(220,18): error C3861: 'nexttowardf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(224,18): error C2039: 'powf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(224,18): error C3861: 'powf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(228,18): error C2039: 'remainderf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(228,18): error C3861: 'remainderf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(232,18): error C2039: 'remquof': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(232,18): error C3861: 'remquof': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(236,18): error C2039: 'rintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(236,18): error C3861: 'rintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(250,18): error C2039: 'scalblnf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(250,18): error C3861: 'scalblnf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(254,18): error C2039: 'scalbnf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(254,18): error C3861: 'scalbnf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(258,18): error C2039: 'sinf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(258,18): error C3861: 'sinf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(262,18): error C2039: 'sinhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(262,18): error C3861: 'sinhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(266,18): error C2039: 'sqrtf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(266,18): error C3861: 'sqrtf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(270,18): error C2039: 'tanf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(270,18): error C3861: 'tanf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(274,18): error C2039: 'tanhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(274,18): error C3861: 'tanhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(278,18): error C2039: 'tgammaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(278,25): fatal  error C1003: error count exceeds 100; stopping compilation
+  GameData.cpp
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(38,18): error C2039: 'acosf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(38,18): error C3861: 'acosf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(42,18): error C2039: 'acoshf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(42,18): error C3861: 'acoshf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(46,18): error C2039: 'asinf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(46,18): error C3861: 'asinf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(50,18): error C2039: 'asinhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(50,18): error C3861: 'asinhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(54,18): error C2039: 'atanf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(54,18): error C3861: 'atanf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(58,18): error C2039: 'atanhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(58,18): error C3861: 'atanhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(62,18): error C2039: 'atan2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(62,18): error C3861: 'atan2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(66,18): error C2039: 'cbrtf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(66,18): error C3861: 'cbrtf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(90,18): error C2039: 'cosf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(90,18): error C3861: 'cosf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(94,18): error C2039: 'coshf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(94,18): error C3861: 'coshf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(98,18): error C2039: 'erff': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(98,18): error C3861: 'erff': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(102,18): error C2039: 'erfcf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(102,18): error C3861: 'erfcf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(106,18): error C2039: 'expf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(106,18): error C3861: 'expf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(110,18): error C2039: 'exp2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(110,18): error C3861: 'exp2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(114,18): error C2039: 'expm1f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(114,18): error C3861: 'expm1f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(118,18): error C2039: 'fabsf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(118,18): error C3861: 'fabsf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(122,18): error C2039: 'fdimf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(122,18): error C3861: 'fdimf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(136,18): error C2039: 'fmaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(136,18): error C3861: 'fmaf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(140,18): error C2039: 'fmaxf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(140,18): error C3861: 'fmaxf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(144,18): error C2039: 'fminf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(144,18): error C3861: 'fminf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(148,18): error C2039: 'fmodf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(148,18): error C3861: 'fmodf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(152,18): error C2039: 'frexpf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(152,18): error C3861: 'frexpf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(156,18): error C2039: 'hypotf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(156,18): error C3861: 'hypotf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(160,18): error C2039: 'ilogbf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(160,18): error C3861: 'ilogbf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(164,18): error C2039: 'ldexpf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(164,18): error C3861: 'ldexpf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(168,18): error C2039: 'lgammaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(168,18): error C3861: 'lgammaf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(172,18): error C2039: 'llrintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(172,18): error C3861: 'llrintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(176,18): error C2039: 'llroundf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(176,18): error C3861: 'llroundf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(180,18): error C2039: 'logf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(180,18): error C3861: 'logf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(184,18): error C2039: 'log10f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(184,18): error C3861: 'log10f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(188,18): error C2039: 'log1pf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(188,18): error C3861: 'log1pf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(192,18): error C2039: 'log2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(192,18): error C3861: 'log2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(196,18): error C2039: 'logbf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(196,18): error C3861: 'logbf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(200,18): error C2039: 'lrintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(200,18): error C3861: 'lrintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(204,18): error C2039: 'lroundf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(204,18): error C3861: 'lroundf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(208,18): error C2039: 'modff': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(208,18): error C3861: 'modff': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(212,18): error C2039: 'nearbyintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(212,18): error C3861: 'nearbyintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(216,18): error C2039: 'nextafterf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(216,18): error C3861: 'nextafterf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(220,18): error C2039: 'nexttowardf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(220,18): error C3861: 'nexttowardf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(224,18): error C2039: 'powf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(224,18): error C3861: 'powf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(228,18): error C2039: 'remainderf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(228,18): error C3861: 'remainderf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(232,18): error C2039: 'remquof': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(232,18): error C3861: 'remquof': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(236,18): error C2039: 'rintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(236,18): error C3861: 'rintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(250,18): error C2039: 'scalblnf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(250,18): error C3861: 'scalblnf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(254,18): error C2039: 'scalbnf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(254,18): error C3861: 'scalbnf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(258,18): error C2039: 'sinf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(258,18): error C3861: 'sinf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(262,18): error C2039: 'sinhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(262,18): error C3861: 'sinhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(266,18): error C2039: 'sqrtf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(266,18): error C3861: 'sqrtf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(270,18): error C2039: 'tanf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(270,18): error C3861: 'tanf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(274,18): error C2039: 'tanhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(274,18): error C3861: 'tanhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(278,18): error C2039: 'tgammaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(278,25): fatal  error C1003: error count exceeds 100; stopping compilation
+  Game_Framework.cpp
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(38,18): error C2039: 'acosf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(38,18): error C3861: 'acosf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(42,18): error C2039: 'acoshf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(42,18): error C3861: 'acoshf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(46,18): error C2039: 'asinf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(46,18): error C3861: 'asinf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(50,18): error C2039: 'asinhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(50,18): error C3861: 'asinhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(54,18): error C2039: 'atanf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(54,18): error C3861: 'atanf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(58,18): error C2039: 'atanhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(58,18): error C3861: 'atanhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(62,18): error C2039: 'atan2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(62,18): error C3861: 'atan2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(66,18): error C2039: 'cbrtf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(66,18): error C3861: 'cbrtf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(90,18): error C2039: 'cosf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(90,18): error C3861: 'cosf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(94,18): error C2039: 'coshf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(94,18): error C3861: 'coshf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(98,18): error C2039: 'erff': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(98,18): error C3861: 'erff': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(102,18): error C2039: 'erfcf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(102,18): error C3861: 'erfcf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(106,18): error C2039: 'expf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(106,18): error C3861: 'expf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(110,18): error C2039: 'exp2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(110,18): error C3861: 'exp2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(114,18): error C2039: 'expm1f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(114,18): error C3861: 'expm1f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(118,18): error C2039: 'fabsf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(118,18): error C3861: 'fabsf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(122,18): error C2039: 'fdimf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(122,18): error C3861: 'fdimf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(136,18): error C2039: 'fmaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(136,18): error C3861: 'fmaf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(140,18): error C2039: 'fmaxf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(140,18): error C3861: 'fmaxf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(144,18): error C2039: 'fminf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(144,18): error C3861: 'fminf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(148,18): error C2039: 'fmodf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(148,18): error C3861: 'fmodf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(152,18): error C2039: 'frexpf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(152,18): error C3861: 'frexpf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(156,18): error C2039: 'hypotf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(156,18): error C3861: 'hypotf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(160,18): error C2039: 'ilogbf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(160,18): error C3861: 'ilogbf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(164,18): error C2039: 'ldexpf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(164,18): error C3861: 'ldexpf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(168,18): error C2039: 'lgammaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(168,18): error C3861: 'lgammaf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(172,18): error C2039: 'llrintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(172,18): error C3861: 'llrintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(176,18): error C2039: 'llroundf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(176,18): error C3861: 'llroundf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(180,18): error C2039: 'logf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(180,18): error C3861: 'logf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(184,18): error C2039: 'log10f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(184,18): error C3861: 'log10f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(188,18): error C2039: 'log1pf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(188,18): error C3861: 'log1pf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(192,18): error C2039: 'log2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(192,18): error C3861: 'log2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(196,18): error C2039: 'logbf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(196,18): error C3861: 'logbf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(200,18): error C2039: 'lrintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(200,18): error C3861: 'lrintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(204,18): error C2039: 'lroundf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(204,18): error C3861: 'lroundf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(208,18): error C2039: 'modff': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(208,18): error C3861: 'modff': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(212,18): error C2039: 'nearbyintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(212,18): error C3861: 'nearbyintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(216,18): error C2039: 'nextafterf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(216,18): error C3861: 'nextafterf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(220,18): error C2039: 'nexttowardf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(220,18): error C3861: 'nexttowardf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(224,18): error C2039: 'powf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(224,18): error C3861: 'powf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(228,18): error C2039: 'remainderf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(228,18): error C3861: 'remainderf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(232,18): error C2039: 'remquof': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(232,18): error C3861: 'remquof': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(236,18): error C2039: 'rintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(236,18): error C3861: 'rintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(250,18): error C2039: 'scalblnf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(250,18): error C3861: 'scalblnf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(254,18): error C2039: 'scalbnf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(254,18): error C3861: 'scalbnf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(258,18): error C2039: 'sinf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(258,18): error C3861: 'sinf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(262,18): error C2039: 'sinhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(262,18): error C3861: 'sinhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(266,18): error C2039: 'sqrtf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(266,18): error C3861: 'sqrtf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(270,18): error C2039: 'tanf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(270,18): error C3861: 'tanf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(274,18): error C2039: 'tanhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(274,18): error C3861: 'tanhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(278,18): error C2039: 'tgammaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(278,25): fatal  error C1003: error count exceeds 100; stopping compilation
+  GLFW_Framework.cpp
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(38,18): error C2039: 'acosf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(38,18): error C3861: 'acosf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(42,18): error C2039: 'acoshf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(42,18): error C3861: 'acoshf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(46,18): error C2039: 'asinf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(46,18): error C3861: 'asinf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(50,18): error C2039: 'asinhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(50,18): error C3861: 'asinhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(54,18): error C2039: 'atanf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(54,18): error C3861: 'atanf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(58,18): error C2039: 'atanhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(58,18): error C3861: 'atanhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(62,18): error C2039: 'atan2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(62,18): error C3861: 'atan2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(66,18): error C2039: 'cbrtf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(66,18): error C3861: 'cbrtf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(90,18): error C2039: 'cosf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(90,18): error C3861: 'cosf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(94,18): error C2039: 'coshf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(94,18): error C3861: 'coshf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(98,18): error C2039: 'erff': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(98,18): error C3861: 'erff': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(102,18): error C2039: 'erfcf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(102,18): error C3861: 'erfcf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(106,18): error C2039: 'expf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(106,18): error C3861: 'expf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(110,18): error C2039: 'exp2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(110,18): error C3861: 'exp2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(114,18): error C2039: 'expm1f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(114,18): error C3861: 'expm1f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(118,18): error C2039: 'fabsf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(118,18): error C3861: 'fabsf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(122,18): error C2039: 'fdimf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(122,18): error C3861: 'fdimf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(136,18): error C2039: 'fmaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(136,18): error C3861: 'fmaf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(140,18): error C2039: 'fmaxf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(140,18): error C3861: 'fmaxf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(144,18): error C2039: 'fminf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(144,18): error C3861: 'fminf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(148,18): error C2039: 'fmodf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(148,18): error C3861: 'fmodf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(152,18): error C2039: 'frexpf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(152,18): error C3861: 'frexpf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(156,18): error C2039: 'hypotf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(156,18): error C3861: 'hypotf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(160,18): error C2039: 'ilogbf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(160,18): error C3861: 'ilogbf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(164,18): error C2039: 'ldexpf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(164,18): error C3861: 'ldexpf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(168,18): error C2039: 'lgammaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(168,18): error C3861: 'lgammaf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(172,18): error C2039: 'llrintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(172,18): error C3861: 'llrintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(176,18): error C2039: 'llroundf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(176,18): error C3861: 'llroundf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(180,18): error C2039: 'logf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(180,18): error C3861: 'logf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(184,18): error C2039: 'log10f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(184,18): error C3861: 'log10f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(188,18): error C2039: 'log1pf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(188,18): error C3861: 'log1pf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(192,18): error C2039: 'log2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(192,18): error C3861: 'log2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(196,18): error C2039: 'logbf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(196,18): error C3861: 'logbf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(200,18): error C2039: 'lrintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(200,18): error C3861: 'lrintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(204,18): error C2039: 'lroundf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(204,18): error C3861: 'lroundf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(208,18): error C2039: 'modff': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(208,18): error C3861: 'modff': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(212,18): error C2039: 'nearbyintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(212,18): error C3861: 'nearbyintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(216,18): error C2039: 'nextafterf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(216,18): error C3861: 'nextafterf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(220,18): error C2039: 'nexttowardf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(220,18): error C3861: 'nexttowardf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(224,18): error C2039: 'powf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(224,18): error C3861: 'powf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(228,18): error C2039: 'remainderf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(228,18): error C3861: 'remainderf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(232,18): error C2039: 'remquof': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(232,18): error C3861: 'remquof': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(236,18): error C2039: 'rintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(236,18): error C3861: 'rintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(250,18): error C2039: 'scalblnf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(250,18): error C3861: 'scalblnf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(254,18): error C2039: 'scalbnf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(254,18): error C3861: 'scalbnf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(258,18): error C2039: 'sinf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(258,18): error C3861: 'sinf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(262,18): error C2039: 'sinhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(262,18): error C3861: 'sinhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(266,18): error C2039: 'sqrtf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(266,18): error C3861: 'sqrtf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(270,18): error C2039: 'tanf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(270,18): error C3861: 'tanf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(274,18): error C2039: 'tanhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(274,18): error C3861: 'tanhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(278,18): error C2039: 'tgammaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(278,25): fatal  error C1003: error count exceeds 100; stopping compilation
+  main.cpp
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cstdlib(24,18): error C2039: 'fabs': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cstdlib(24,18): error C3861: 'fabs': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cstdlib(28,18): error C2039: 'fabsf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cstdlib(28,18): error C3861: 'fabsf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cstdlib(32,18): error C2039: 'fabsl': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cstdlib(32,18): error C3861: 'fabsl': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(38,18): error C2039: 'acosf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(38,18): error C3861: 'acosf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(42,18): error C2039: 'acoshf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(42,18): error C3861: 'acoshf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(46,18): error C2039: 'asinf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(46,18): error C3861: 'asinf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(50,18): error C2039: 'asinhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(50,18): error C3861: 'asinhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(54,18): error C2039: 'atanf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(54,18): error C3861: 'atanf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(58,18): error C2039: 'atanhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(58,18): error C3861: 'atanhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(62,18): error C2039: 'atan2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(62,18): error C3861: 'atan2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(66,18): error C2039: 'cbrtf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(66,18): error C3861: 'cbrtf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(90,18): error C2039: 'cosf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(90,18): error C3861: 'cosf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(94,18): error C2039: 'coshf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(94,18): error C3861: 'coshf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(98,18): error C2039: 'erff': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(98,18): error C3861: 'erff': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(102,18): error C2039: 'erfcf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(102,18): error C3861: 'erfcf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(106,18): error C2039: 'expf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(106,18): error C3861: 'expf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(110,18): error C2039: 'exp2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(110,18): error C3861: 'exp2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(114,18): error C2039: 'expm1f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(114,18): error C3861: 'expm1f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(118,18): error C2039: 'fabsf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(118,18): error C3861: 'fabsf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(122,18): error C2039: 'fdimf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(122,18): error C3861: 'fdimf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(136,18): error C2039: 'fmaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(136,18): error C3861: 'fmaf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(140,18): error C2039: 'fmaxf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(140,18): error C3861: 'fmaxf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(144,18): error C2039: 'fminf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(144,18): error C3861: 'fminf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(148,18): error C2039: 'fmodf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(148,18): error C3861: 'fmodf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(152,18): error C2039: 'frexpf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(152,18): error C3861: 'frexpf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(156,18): error C2039: 'hypotf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(156,18): error C3861: 'hypotf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(160,18): error C2039: 'ilogbf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(160,18): error C3861: 'ilogbf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(164,18): error C2039: 'ldexpf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(164,18): error C3861: 'ldexpf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(168,18): error C2039: 'lgammaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(168,18): error C3861: 'lgammaf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(172,18): error C2039: 'llrintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(172,18): error C3861: 'llrintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(176,18): error C2039: 'llroundf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(176,18): error C3861: 'llroundf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(180,18): error C2039: 'logf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(180,18): error C3861: 'logf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(184,18): error C2039: 'log10f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(184,18): error C3861: 'log10f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(188,18): error C2039: 'log1pf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(188,18): error C3861: 'log1pf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(192,18): error C2039: 'log2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(192,18): error C3861: 'log2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(196,18): error C2039: 'logbf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(196,18): error C3861: 'logbf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(200,18): error C2039: 'lrintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(200,18): error C3861: 'lrintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(204,18): error C2039: 'lroundf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(204,18): error C3861: 'lroundf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(208,18): error C2039: 'modff': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(208,18): error C3861: 'modff': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(212,18): error C2039: 'nearbyintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(212,18): error C3861: 'nearbyintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(216,18): error C2039: 'nextafterf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(216,18): error C3861: 'nextafterf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(220,18): error C2039: 'nexttowardf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(220,18): error C3861: 'nexttowardf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(224,18): error C2039: 'powf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(224,18): error C3861: 'powf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(228,18): error C2039: 'remainderf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(228,18): error C3861: 'remainderf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(232,18): error C2039: 'remquof': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(232,18): error C3861: 'remquof': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(236,18): error C2039: 'rintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(236,18): error C3861: 'rintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(250,18): error C2039: 'scalblnf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(250,18): error C3861: 'scalblnf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(254,18): error C2039: 'scalbnf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(254,18): error C3861: 'scalbnf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(258,18): error C2039: 'sinf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(258,18): error C3861: 'sinf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(262,18): error C2039: 'sinhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(262,18): error C3861: 'sinhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(266,18): error C2039: 'sqrtf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(266,23): fatal  error C1003: error count exceeds 100; stopping compilation
+  Math.cpp
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cstdlib(24,18): error C2039: 'fabs': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cstdlib(24,18): error C3861: 'fabs': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cstdlib(28,18): error C2039: 'fabsf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cstdlib(28,18): error C3861: 'fabsf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cstdlib(32,18): error C2039: 'fabsl': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cstdlib(32,18): error C3861: 'fabsl': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(38,18): error C2039: 'acosf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(38,18): error C3861: 'acosf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(42,18): error C2039: 'acoshf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(42,18): error C3861: 'acoshf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(46,18): error C2039: 'asinf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(46,18): error C3861: 'asinf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(50,18): error C2039: 'asinhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(50,18): error C3861: 'asinhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(54,18): error C2039: 'atanf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(54,18): error C3861: 'atanf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(58,18): error C2039: 'atanhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(58,18): error C3861: 'atanhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(62,18): error C2039: 'atan2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(62,18): error C3861: 'atan2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(66,18): error C2039: 'cbrtf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(66,18): error C3861: 'cbrtf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(90,18): error C2039: 'cosf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(90,18): error C3861: 'cosf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(94,18): error C2039: 'coshf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(94,18): error C3861: 'coshf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(98,18): error C2039: 'erff': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(98,18): error C3861: 'erff': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(102,18): error C2039: 'erfcf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(102,18): error C3861: 'erfcf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(106,18): error C2039: 'expf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(106,18): error C3861: 'expf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(110,18): error C2039: 'exp2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(110,18): error C3861: 'exp2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(114,18): error C2039: 'expm1f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(114,18): error C3861: 'expm1f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(118,18): error C2039: 'fabsf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(118,18): error C3861: 'fabsf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(122,18): error C2039: 'fdimf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(122,18): error C3861: 'fdimf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(136,18): error C2039: 'fmaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(136,18): error C3861: 'fmaf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(140,18): error C2039: 'fmaxf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(140,18): error C3861: 'fmaxf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(144,18): error C2039: 'fminf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(144,18): error C3861: 'fminf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(148,18): error C2039: 'fmodf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(148,18): error C3861: 'fmodf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(152,18): error C2039: 'frexpf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(152,18): error C3861: 'frexpf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(156,18): error C2039: 'hypotf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(156,18): error C3861: 'hypotf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(160,18): error C2039: 'ilogbf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(160,18): error C3861: 'ilogbf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(164,18): error C2039: 'ldexpf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(164,18): error C3861: 'ldexpf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(168,18): error C2039: 'lgammaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(168,18): error C3861: 'lgammaf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(172,18): error C2039: 'llrintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(172,18): error C3861: 'llrintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(176,18): error C2039: 'llroundf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(176,18): error C3861: 'llroundf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(180,18): error C2039: 'logf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(180,18): error C3861: 'logf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(184,18): error C2039: 'log10f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(184,18): error C3861: 'log10f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(188,18): error C2039: 'log1pf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(188,18): error C3861: 'log1pf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(192,18): error C2039: 'log2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(192,18): error C3861: 'log2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(196,18): error C2039: 'logbf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(196,18): error C3861: 'logbf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(200,18): error C2039: 'lrintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(200,18): error C3861: 'lrintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(204,18): error C2039: 'lroundf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(204,18): error C3861: 'lroundf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(208,18): error C2039: 'modff': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(208,18): error C3861: 'modff': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(212,18): error C2039: 'nearbyintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(212,18): error C3861: 'nearbyintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(216,18): error C2039: 'nextafterf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(216,18): error C3861: 'nextafterf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(220,18): error C2039: 'nexttowardf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(220,18): error C3861: 'nexttowardf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(224,18): error C2039: 'powf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(224,18): error C3861: 'powf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(228,18): error C2039: 'remainderf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(228,18): error C3861: 'remainderf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(232,18): error C2039: 'remquof': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(232,18): error C3861: 'remquof': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(236,18): error C2039: 'rintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(236,18): error C3861: 'rintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(250,18): error C2039: 'scalblnf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(250,18): error C3861: 'scalblnf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(254,18): error C2039: 'scalbnf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(254,18): error C3861: 'scalbnf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(258,18): error C2039: 'sinf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(258,18): error C3861: 'sinf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(262,18): error C2039: 'sinhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(262,18): error C3861: 'sinhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(266,18): error C2039: 'sqrtf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(266,23): fatal  error C1003: error count exceeds 100; stopping compilation
+  PlayerCharacter.cpp
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(38,18): error C2039: 'acosf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(38,18): error C3861: 'acosf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(42,18): error C2039: 'acoshf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(42,18): error C3861: 'acoshf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(46,18): error C2039: 'asinf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(46,18): error C3861: 'asinf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(50,18): error C2039: 'asinhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(50,18): error C3861: 'asinhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(54,18): error C2039: 'atanf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(54,18): error C3861: 'atanf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(58,18): error C2039: 'atanhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(58,18): error C3861: 'atanhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(62,18): error C2039: 'atan2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(62,18): error C3861: 'atan2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(66,18): error C2039: 'cbrtf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(66,18): error C3861: 'cbrtf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(90,18): error C2039: 'cosf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(90,18): error C3861: 'cosf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(94,18): error C2039: 'coshf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(94,18): error C3861: 'coshf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(98,18): error C2039: 'erff': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(98,18): error C3861: 'erff': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(102,18): error C2039: 'erfcf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(102,18): error C3861: 'erfcf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(106,18): error C2039: 'expf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(106,18): error C3861: 'expf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(110,18): error C2039: 'exp2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(110,18): error C3861: 'exp2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(114,18): error C2039: 'expm1f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(114,18): error C3861: 'expm1f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(118,18): error C2039: 'fabsf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(118,18): error C3861: 'fabsf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(122,18): error C2039: 'fdimf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(122,18): error C3861: 'fdimf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(136,18): error C2039: 'fmaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(136,18): error C3861: 'fmaf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(140,18): error C2039: 'fmaxf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(140,18): error C3861: 'fmaxf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(144,18): error C2039: 'fminf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(144,18): error C3861: 'fminf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(148,18): error C2039: 'fmodf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(148,18): error C3861: 'fmodf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(152,18): error C2039: 'frexpf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(152,18): error C3861: 'frexpf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(156,18): error C2039: 'hypotf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(156,18): error C3861: 'hypotf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(160,18): error C2039: 'ilogbf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(160,18): error C3861: 'ilogbf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(164,18): error C2039: 'ldexpf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(164,18): error C3861: 'ldexpf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(168,18): error C2039: 'lgammaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(168,18): error C3861: 'lgammaf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(172,18): error C2039: 'llrintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(172,18): error C3861: 'llrintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(176,18): error C2039: 'llroundf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(176,18): error C3861: 'llroundf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(180,18): error C2039: 'logf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(180,18): error C3861: 'logf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(184,18): error C2039: 'log10f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(184,18): error C3861: 'log10f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(188,18): error C2039: 'log1pf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(188,18): error C3861: 'log1pf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(192,18): error C2039: 'log2f': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(192,18): error C3861: 'log2f': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(196,18): error C2039: 'logbf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(196,18): error C3861: 'logbf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(200,18): error C2039: 'lrintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(200,18): error C3861: 'lrintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(204,18): error C2039: 'lroundf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(204,18): error C3861: 'lroundf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(208,18): error C2039: 'modff': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(208,18): error C3861: 'modff': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(212,18): error C2039: 'nearbyintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(212,18): error C3861: 'nearbyintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(216,18): error C2039: 'nextafterf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(216,18): error C3861: 'nextafterf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(220,18): error C2039: 'nexttowardf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(220,18): error C3861: 'nexttowardf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(224,18): error C2039: 'powf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(224,18): error C3861: 'powf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(228,18): error C2039: 'remainderf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(228,18): error C3861: 'remainderf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(232,18): error C2039: 'remquof': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(232,18): error C3861: 'remquof': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(236,18): error C2039: 'rintf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(236,18): error C3861: 'rintf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(250,18): error C2039: 'scalblnf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(250,18): error C3861: 'scalblnf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(254,18): error C2039: 'scalbnf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(254,18): error C3861: 'scalbnf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(258,18): error C2039: 'sinf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(258,18): error C3861: 'sinf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(262,18): error C2039: 'sinhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(262,18): error C3861: 'sinhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(266,18): error C2039: 'sqrtf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(266,18): error C3861: 'sqrtf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(270,18): error C2039: 'tanf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(270,18): error C3861: 'tanf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(274,18): error C2039: 'tanhf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(274,18): error C3861: 'tanhf': identifier not found
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(278,18): error C2039: 'tgammaf': is not a member of '`global namespace''
+D:\Programming\Visual Studio\VC\Tools\MSVC\14.37.32822\include\cmath(278,25): fatal  error C1003: error count exceeds 100; stopping compilation
+  Generating Code...
