@@ -124,6 +124,7 @@ void Game_Framework::onMouseButtonClick(FRMouseButton button, bool isReleased)
 
 		//play sound
 		SoundEngine->play2D(GameData::soundPaths.at(Sounds::SOUND_SHIELD_ENGAGE)->getSoundSource(), false);
+		SoundEngine->play2D(GameData::soundPaths.at(Sounds::AMBIENT_SHIELD_5S)->getSoundSource(), false);
 	}
 }
 
