@@ -2,6 +2,7 @@
 
 #include "GLFW_Framework.h"
 #include "MyMath.h"
+#include "MyEnums.h"
 #include <vector>
 #include <string>
 #include <unordered_map>
@@ -63,12 +64,22 @@ public:
 	static int spawnRate_timedPlatform;
 	static int spawnRate_coin;
 
+	//sounds
+	static std::unordered_map<Sounds, ISound*> soundPaths;
+	
+
 private:
 	//input sprite name e.g: "spriteName.png"
 	//Sprite must be in SolutionDir\Sprites
 	std::string GetSpritePath(std::string spriteName);
 
+	//input sound name e.g: "soundName.mp3"
+	//Sound must be in SolutionDir\Sounds and be mp3
+	std::string GetSoundPath(std::string soundName);
+
+	void InitSprites();
 	void InitNumberSprites();
+	void InitSounds();
 
 	//In order: enemies, timedPlatforms, coins. From 0 to 100 (%)
 	void SetDefaultSpawnRates(int enemies, int timedPlatforms, int coins);

@@ -30,6 +30,14 @@ bool Game_Framework::Init()
 	layer_shield.clear();
 	layer_coins.clear();
 
+	gd.soundPaths.at(Sounds::AMBIENT_BIRDS)->setIsPaused(false);
+	
+	//ISound* snd = SoundEngine->play2D("D:\\Programming\\OpenGL_Projects\\Game\\Cloud_Jumper\\Sounds\\birds.mp3", true, true);
+	//snd->setVolume(0.5);
+	//snd->setIsPaused(false);
+	//SoundEngine->drop();
+	//SoundEngine->play2D("D:\\Programming\\OpenGL_Projects\\Game\\Cloud_Jumper\\Sounds\\birds.mp3", true);
+
 
 	GameData::trackedScore = 0;
 
@@ -81,11 +89,11 @@ bool Game_Framework::Tick()
 		std::chrono::duration<float> elapsedTime = frameEnd - frameStart;
 		LimitFPS(targetFPS, elapsedTime);
 
-
 		return false;
 	}
 	else
 	{
+		SoundEngine->stopAllSounds();
 		return true;
 	}
 
@@ -105,12 +113,17 @@ void Game_Framework::onMouseButtonClick(FRMouseButton button, bool isReleased)
 		layer_projectiles.emplace(Actor::counter, new Actor(Vector2D(player->GetSpriteLocation().X, player->GetSpriteLocation().Y), PROJECTILES));
 		layer_projectiles[Actor::counter]->projectileDestination = Vector2D(mouseX, mouseY);
 		layer_projectiles[Actor::counter]->cashedPlayerLocation = player->GetSpriteLocation();
+		
+		SoundEngine->play2D(gd.soundPaths.at(Sounds::SOUND_SHOOT)->getSoundSource(), false);
 	}
 
-	if (button == FRMouseButton::RIGHT && !isReleased && layer_shield.empty() && player->coinsCollected > 20)
+	if (button == FRMouseButton::RIGHT && !isReleased && layer_shield.empty() && player->coinsCollected >= 20)
 	{
 		layer_shield.emplace(Actor::counter, new Actor(Vector2D(player->GetSpriteLocation().X, player->GetSpriteLocation().Y), SHIELD));
 		player->coinsCollected -= 20;
+
+		//play sound
+		SoundEngine->play2D(GameData::soundPaths.at(Sounds::SOUND_SHIELD_ENGAGE)->getSoundSource(), false);
 	}
 }
 
@@ -346,6 +359,9 @@ void Game_Framework::HandleObjects_Despawn(std::unordered_map<int, Actor*>& temp
 		{
 			temp_coins.erase(coin.first);
 			player->coinsCollected++;
+
+			//play sound
+			SoundEngine->play2D(GameData::soundPaths.at(Sounds::SOUND_STAR_1)->getSoundSource(), false);
 		}
 	}
 
@@ -521,6 +537,7 @@ void Game_Framework::HandleScore_Coins()
 	{
 		int digit = coins % 10;
 
+		
 
 		layer_scoreCoins.push_back(new Actor(Vector2D(0, 0), digit, SCORE));
 		position++;

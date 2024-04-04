@@ -4,16 +4,20 @@
 #include <stb/stb_image.h>
 #include <stb/stb_image_resize2.h>
 #include <stb/stb_image_write.h>
+#include <irrklang/irrKlang.h>
 
 #include "Shader.h"
 #include <iostream>
 #include <vector>
 #include <map>
 
+using namespace irrklang;
 
 extern int GLOBAL_SCREEN_WIDTH;
 extern int GLOBAL_SCREEN_HEIGHT;
 extern int GLOBAL_FULLSCREEN;
+
+
 
 // NEED
 class Sprite
@@ -21,7 +25,7 @@ class Sprite
 public:
 	Sprite();
 	~Sprite();
-
+	
 	unsigned int textureObject;
 	int width;
 	int height;
@@ -138,6 +142,9 @@ public:
 	std::string vertexShader_path = PROJECT_DIR + std::string("Shaders\\VertexShader.vs");
 	std::string fragmentShader_path = PROJECT_DIR + std::string("Shaders\\FragmentShader.fs");
 
+	//sounds
+	static ISoundEngine* SoundEngine;
+	
 };
 
 void calculateSpriteVertices(Sprite* sprite, float* vertices, int arrSize);

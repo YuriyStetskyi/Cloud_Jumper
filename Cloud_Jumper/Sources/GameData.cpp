@@ -31,16 +31,9 @@ bool GameData::Init()
 {
 	getScreenSize(screenWidth, screenHeight);
 
-	spr_background.Set(createSprite(GetSpritePath("background.png").c_str()));
-	spr_platform.Set(createSprite(GetSpritePath("platform_standard.png").c_str()));
-	spr_platform_timed.Set(createSprite(GetSpritePath("platform_timed.png").c_str()));
-	spr_player.Set(createSprite(GetSpritePath("cloud_player.png").c_str()));
-	spr_projectile.Set(createSprite(GetSpritePath("projectile.png").c_str()));
-	spr_enemy.Set(createSprite(GetSpritePath("cloud_evil.png").c_str()));
-	spr_shield.Set(createSprite(GetSpritePath("shield.png").c_str()));
-	spr_coin.Set(createSprite(GetSpritePath("star.png").c_str()));
-
+	InitSprites();
 	InitNumberSprites();
+	InitSounds();
 
 	SetDefaultSpawnRates(10, 30, 20);
 	ScaleBackgroundToWindowSize();
@@ -83,6 +76,27 @@ std::string GameData::GetSpritePath(std::string spriteName)
 	return result;
 }
 
+std::string GameData::GetSoundPath(std::string soundName)
+{
+	std::string solutionDir = SOLUTION_DIR;
+	std::string spriteFolderPath = "Sounds\\";
+	std::string result = solutionDir + spriteFolderPath + soundName;
+
+	return result;
+}
+
+void GameData::InitSprites()
+{
+	spr_background.Set(createSprite(GetSpritePath("background.png").c_str()));
+	spr_platform.Set(createSprite(GetSpritePath("platform_standard.png").c_str()));
+	spr_platform_timed.Set(createSprite(GetSpritePath("platform_timed.png").c_str()));
+	spr_player.Set(createSprite(GetSpritePath("cloud_player.png").c_str()));
+	spr_projectile.Set(createSprite(GetSpritePath("projectile.png").c_str()));
+	spr_enemy.Set(createSprite(GetSpritePath("cloud_evil.png").c_str()));
+	spr_shield.Set(createSprite(GetSpritePath("shield.png").c_str()));
+	spr_coin.Set(createSprite(GetSpritePath("star.png").c_str()));
+}
+
 void GameData::InitNumberSprites()
 {
 	spr_number_0.Set(createSprite(GetSpritePath("number_0.png").c_str()));
@@ -106,6 +120,22 @@ void GameData::InitNumberSprites()
 	numbers.emplace(7, spr_number_7);
 	numbers.emplace(8, spr_number_8);
 	numbers.emplace(9, spr_number_9);
+}
+
+void GameData::InitSounds()
+{	
+	
+	soundPaths.emplace(Sounds::AMBIENT_BIRDS, GLFW_Framework::SoundEngine->play2D(GetSoundPath("birds.mp3").c_str(), true, true));
+	soundPaths.at(Sounds::AMBIENT_BIRDS)->setVolume(0.1);
+	soundPaths.emplace(Sounds::AMBIENT_SHIELD, GLFW_Framework::SoundEngine->play2D(GetSoundPath("shield_ambient.mp3").c_str(), false, true));
+	soundPaths.emplace(Sounds::AMBIENT_SHIELD_5S, GLFW_Framework::SoundEngine->play2D(GetSoundPath("shield_ambient_5sec.mp3").c_str(), false, true));
+	soundPaths.emplace(Sounds::SOUND_JUMP, GLFW_Framework::SoundEngine->play2D(GetSoundPath("jump.mp3").c_str(), false, true));
+	soundPaths.emplace(Sounds::SOUND_SHIELD_ENGAGE, GLFW_Framework::SoundEngine->play2D(GetSoundPath("shield_engage.mp3").c_str(), false, true));
+	soundPaths.emplace(Sounds::SOUND_SHIELD_DISENGAGE, GLFW_Framework::SoundEngine->play2D(GetSoundPath("shield_disengage.mp3").c_str(), false, true));
+	soundPaths.emplace(Sounds::SOUND_SHOOT, GLFW_Framework::SoundEngine->play2D(GetSoundPath("shoot_sound.mp3").c_str(), false, true));
+	soundPaths.emplace(Sounds::SOUND_STAR_1, GLFW_Framework::SoundEngine->play2D(GetSoundPath("star_pickup_1.mp3").c_str(), false, true));
+	soundPaths.emplace(Sounds::SOUND_STAR_2, GLFW_Framework::SoundEngine->play2D(GetSoundPath("star_pickup_2.mp3").c_str(), false, true));
+	soundPaths.emplace(Sounds::SOUND_STAR_3, GLFW_Framework::SoundEngine->play2D(GetSoundPath("star_pickup_3.mp3").c_str(), false, true));
 }
 
 void GameData::SetDefaultSpawnRates(int enemies, int timedPlatforms, int coins)
@@ -148,3 +178,5 @@ int GameData::spawnRate_timedPlatform = 0;
 int GameData::spawnRate_coin = 0;
 
 std::unordered_map < int, SpriteData> GameData::numbers;
+
+std::unordered_map<Sounds, ISound*> GameData::soundPaths;

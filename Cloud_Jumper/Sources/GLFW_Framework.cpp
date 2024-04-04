@@ -4,6 +4,8 @@ int GLOBAL_SCREEN_WIDTH;
 int GLOBAL_SCREEN_HEIGHT;
 int GLOBAL_FULLSCREEN;
 
+ISoundEngine* SoundEngine;
+
 Sprite::Sprite()
 {
 	textureObject = 0;
@@ -49,11 +51,16 @@ Sprite* createSprite(const char* path)
 
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, sprite->width, sprite->height, 0, GL_RGBA, GL_UNSIGNED_BYTE, sprite->textureData);
 		glGenerateMipmap(GL_TEXTURE_2D);
+#ifdef DEBUG
 		std::cout << "TEXTURE::LOAD_SUCCESSFULL" << std::endl;
+#endif // DEBUG
+
 	}
 	else
 	{
+#ifdef DEBUG
 		std::cout << "ERROR::TEXTURE::LOAD_FAILURE" << std::endl;
+#endif // DEBUG
 	}
 
 	glBindTexture(GL_TEXTURE_2D, 0);
@@ -380,8 +387,10 @@ bool GLFW_Framework::runInit(GLFW_Framework* framework)
 	{
 		mouseButtons_pressed.emplace((FRMouseButton)i, false);
 	}
-
+	
+	SoundEngine = createIrrKlangDevice();
 	framework->setTitle();
+	
 	setupGLFWandGLAD(framework);
 	if (!framework->window)
 	{
@@ -585,3 +594,5 @@ int run(GLFW_Framework* framework)
 	glfwTerminate();
 	return 0;
 }
+
+ISoundEngine* GLFW_Framework::SoundEngine;

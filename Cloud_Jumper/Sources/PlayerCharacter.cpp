@@ -120,10 +120,10 @@ void PlayerCharacter::SetColliderDimensions(int X, int Y)
 
 void PlayerCharacter::MoveOnInput(float input, float DeltaTime)
 {
-	int maxSpeed;
-	int acceleration;
+	int maxSpeed = maxSpeed_left;
+	int acceleration = acceleration_left;
 
-	ChangeSpeedOnRightSide(maxSpeed, acceleration);
+	//ChangeSpeedOnRightSide(maxSpeed, acceleration);
 
 	if (input > 0)
 	{
@@ -202,7 +202,6 @@ void PlayerCharacter::ApplyGravity(float DeltaTime)
 
 void PlayerCharacter::Jump(float DeltaTime)
 {
-
 	if (DeltaTime < 1)
 	{
 		Vector2D startingVelocity = jumpDirection * jumpTerminalVelocity;
@@ -238,6 +237,8 @@ void PlayerCharacter::JumpOnCollision(std::unordered_map<int, Actor*> platforms,
 
 			if (platform.second->platformType == "timed")
 				platform.second->toBeDestroyed = true;
+
+			GLFW_Framework::SoundEngine->play2D(GameData::soundPaths.at(Sounds::SOUND_JUMP)->getSoundSource(), false);
 		}
 	}
 }

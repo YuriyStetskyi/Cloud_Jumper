@@ -81,7 +81,10 @@ public:
 		}
 		else
 		{
+#ifdef DEBUG
 			std::cout << "SHADER::VERTEX::COMPILATION_SUCCESSFULL" << std::endl;
+#endif // DEBUG
+
 		}
 #pragma endregion
 
@@ -104,7 +107,9 @@ public:
 		}
 		else
 		{
+#ifdef DEBUG
 			std::cout << "SHADER::FRAGMENT::COMPILATION_SUCCESSFULL" << std::endl;
+#endif // DEBUG
 		}
 #pragma endregion
 
@@ -127,7 +132,9 @@ public:
 		}
 		else
 		{
+#ifdef DEBUG
 			std::cout << "SHADER::PROGRAM::LINKAGE_SUCCESSFULL" << std::endl;
+#endif // DEBUG
 
 		}
 #pragma endregion

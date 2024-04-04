@@ -7,6 +7,7 @@
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #define STB_IMAGE_RESIZE_IMPLEMENTATION
 
+//#define DEBUG
 
 //#include "GLFW_Framework.h"
 #include "Game_Framework.h"
@@ -20,6 +21,7 @@ Game_Framework* glfw_framework;
 int width = 1200;
 int height = 800;
 bool restartClient = true;
+bool fullscreen = false;
 
 void CheckForResolutionChange(Game_Framework* framework)
 {
@@ -69,7 +71,6 @@ std::thread console_thread(CheckForResolutionChange, glfw_framework);
 
 int main()
 {
-    //glfw_framework = new Game_Framework;
 	console_thread.detach();
 	std::cout << "To change resolution use command:\ngame -window 'width'x'height'" << std::endl;
     
