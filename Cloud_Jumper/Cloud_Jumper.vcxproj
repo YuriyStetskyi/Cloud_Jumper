@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Learning\OpenGL_testing_helloworld\glad.c" />
+    <ClCompile Include="glad.c" />
     <ClCompile Include="Sources\Actor.cpp" />
     <ClCompile Include="Sources\Drawer.cpp" />
     <ClCompile Include="Sources\GameData.cpp" />
@@ -159,6 +159,10 @@
     <ClInclude Include="Headers\MyEnums.h" />
     <ClInclude Include="Headers\PlayerCharacter.h" />
     <ClInclude Include="Headers\Shader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\FragmentShader.fs" />
+    <None Include="Shaders\VertexShader.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
