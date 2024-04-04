@@ -8,7 +8,7 @@
 
 This project's framework was built with OpenGL v3.3 core, GLAD, GLFW for 
 rendering in the window purposes , stb_image for loading sprites, 
-and irrKlang v1.5 for audio.
+and irrKlang v1.5 for audio. Shaders were written in GLSL.
 
 Jump up on top of the clouds increasing your score and collect
 stars to gain a powerful shield ability. Be wary of platfroms 
