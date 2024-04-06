@@ -8,6 +8,8 @@
 #include <sstream>
 #include <iostream>
 
+#define DEBUG
+
 class Shader
 {
 public:

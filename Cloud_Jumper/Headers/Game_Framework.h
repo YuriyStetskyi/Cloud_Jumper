@@ -16,6 +16,7 @@
 //#include "Platform.h"
 #include "MyEnums.h"
 
+
 class Game_Framework : public GLFW_Framework
 {
 public:

@@ -32,11 +32,6 @@ bool Game_Framework::Init()
 
 	gd.soundPaths.at(Sounds::AMBIENT_BIRDS)->setIsPaused(false);
 	
-	//ISound* snd = SoundEngine->play2D("D:\\Programming\\OpenGL_Projects\\Game\\Cloud_Jumper\\Sounds\\birds.mp3", true, true);
-	//snd->setVolume(0.5);
-	//snd->setIsPaused(false);
-	//SoundEngine->drop();
-	//SoundEngine->play2D("D:\\Programming\\OpenGL_Projects\\Game\\Cloud_Jumper\\Sounds\\birds.mp3", true);
 
 
 	GameData::trackedScore = 0;

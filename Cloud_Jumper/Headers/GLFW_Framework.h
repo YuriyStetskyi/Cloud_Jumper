@@ -142,6 +142,9 @@ public:
 	std::string vertexShader_path = PROJECT_DIR + std::string("Shaders\\VertexShader.vs");
 	std::string fragmentShader_path = PROJECT_DIR + std::string("Shaders\\FragmentShader.fs");
 
+	std::string vertexShader_RELEASEpath = "Shaders\\VertexShader.vs";
+	std::string fragmentShader_RELEASEpath = "Shaders\\FragmentShader.fs";
+
 	//sounds
 	static ISoundEngine* SoundEngine;
 	

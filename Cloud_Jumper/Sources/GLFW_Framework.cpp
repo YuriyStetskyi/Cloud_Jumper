@@ -1,5 +1,7 @@
 #include "GLFW_Framework.h"
 
+#define DEBUG
+
 int GLOBAL_SCREEN_WIDTH;
 int GLOBAL_SCREEN_HEIGHT;
 int GLOBAL_FULLSCREEN;
@@ -552,7 +554,15 @@ void setupTextureParameters()
 
 void setupShaders(GLFW_Framework* framework)
 {
+#ifdef DEBUG
 	framework->shader = Shader(framework->vertexShader_path.c_str(), framework->fragmentShader_path.c_str());
+#endif // DEBUG
+
+#ifndef DEBUG
+	framework->shader = Shader(framework->vertexShader_RELEASEpath.c_str(), framework->fragmentShader_RELEASEpath.c_str());
+#endif // !DEBUG
+
+
 	framework->shader.use();
 }
 
