@@ -41,7 +41,11 @@ Right Mouse Button - at cost of 20 stars deploy a shield that
 makes player invulnerable for 5 seconds (excluding falling down)
 Escape - leaves the game
 
-You can also change the games resolution by typing command in console:
-game -window WidthxHeight
+You can change the games resolution by typing command in console: 
+game -window WidthxHeight 
+
+Or change window mode by typing:
+game -window fullscreen
+game -window windowed
 
 ### Project was built in approximately 2,5 weeks without prior OpenGL and rendering pipeline knowledge
