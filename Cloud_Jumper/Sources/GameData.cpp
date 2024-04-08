@@ -1,7 +1,7 @@
 #include "GameData.h"
 #define _CRT_SECURE_NO_WARNINGS
 
-#define DEBUG
+
 
 SpriteData::SpriteData(Sprite* sprite)
 {

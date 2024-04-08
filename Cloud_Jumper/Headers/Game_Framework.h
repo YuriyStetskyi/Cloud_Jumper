@@ -37,8 +37,7 @@ public:
 
 	//preInit
 	void ChangePreInitStats(int width, int height, bool fullscreen);
-	int screen_width;
-	int screen_height;
+
 	bool screen_fullscreen = false;
 
 	//close condition

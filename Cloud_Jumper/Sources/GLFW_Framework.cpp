@@ -1,6 +1,6 @@
 #include "GLFW_Framework.h"
 
-#define DEBUG
+
 
 int GLOBAL_SCREEN_WIDTH;
 int GLOBAL_SCREEN_HEIGHT;
@@ -521,6 +521,18 @@ void setupGLFWandGLAD(GLFW_Framework* framework)
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 	glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
 
+	framework->monitor = glfwGetPrimaryMonitor();
+	framework->mode = glfwGetVideoMode(framework->monitor);
+	
+	if (framework->screen_fullscreen)
+	{
+		framework->screen_width = framework->mode->width;
+		framework->screen_height = framework->mode->height;
+		GLOBAL_SCREEN_WIDTH = framework->mode->width;
+		GLOBAL_SCREEN_HEIGHT = framework->mode->height;
+	}
+
+
 	framework->window = glfwCreateWindow(framework->screen_width, framework->screen_height, framework->title.c_str(), NULL, NULL);
 	glfwSetWindowShouldClose(framework->window, 0);
 	if (!framework->window)
@@ -534,6 +546,19 @@ void setupGLFWandGLAD(GLFW_Framework* framework)
 	{
 		std::cout << "Failed to initialize GLAD" << std::endl;
 	}
+
+	//setup fullscreen
+	
+	if (framework->screen_fullscreen)
+	{
+
+		glfwSetWindowMonitor(framework->window, framework->monitor, 0, 0, framework->screen_width, framework->screen_height, framework->mode->refreshRate);
+	}
+	else
+	{
+		glfwSetWindowMonitor(framework->window, nullptr, 400, 150, framework->screen_width,framework->screen_height, framework->mode->refreshRate);
+	}
+
 
 	glViewport(0, 0, framework->screen_width, framework->screen_height);
 }
@@ -575,6 +600,15 @@ void setupGlobals(GLFW_Framework* framework)
 
 int run(GLFW_Framework* framework)
 {
+	/*framework->monitor = glfwGetPrimaryMonitor();
+	framework->mode = glfwGetVideoMode(framework->monitor);
+
+	if (framework->screen_fullscreen)
+	{
+		framework->screen_width = framework->mode->width;
+		framework->screen_height = framework->mode->height;
+	}*/
+
 	framework->runPreInit(framework->screen_width, framework->screen_height, framework->screen_fullscreen);
 	setupGlobals(framework);
 	if (framework->runInit(framework))

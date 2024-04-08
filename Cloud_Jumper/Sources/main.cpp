@@ -40,9 +40,38 @@ void CheckForResolutionChange(Game_Framework* framework)
             iss >> firstWord >> secondWord >> resolution;
             if (firstWord == "game" && secondWord == "-window")
             {
+                if (resolution == "fullscreen" && fullscreen == false)
+                {
+                    fullscreen = true;
+                    restartClient = true;
+                    glfw_framework->Close();
+                    std::cout << "Game window changed to fullscreen mode!" << std::endl;
+                    continue;
+                }
+                else if (resolution == "windowed" && fullscreen == true)
+                {
+                    fullscreen = false;
+                    restartClient = true;
+                    glfw_framework->Close();
+                    std::cout << "Game window changed to windowed mode!" << std::endl;
+                    continue;
+                }
+                else if (resolution == "fullscreen" && fullscreen == true)
+                {
+                    std::cout << "Your game is already in fullscreen mode" << std::endl;
+                    continue;
+                }
+                else if (resolution == "windowed" && fullscreen == false)
+                {
+                    std::cout << "Your game is already in windowed mode" << std::endl;
+                    continue;
+                }
+
                 char x;
                 int w_input, h_input;
+                std::string fsc;
                 std::istringstream resolutionStream(resolution);
+            
                 if (!(resolutionStream >> w_input >> x >> h_input) || x != 'x')
                 {
                     std::cout << "Invalid resolution format.\n" <<
@@ -72,17 +101,16 @@ std::thread console_thread(CheckForResolutionChange, glfw_framework);
 int main()
 {
 	console_thread.detach();
-	std::cout << "To change resolution use command:\ngame -window 'width'x'height'" << std::endl;
+	std::cout << "To change resolution use command:\n\tgame -window 'width'x'height'" << std::endl;
+    std::cout << "To make game fullscreen or windowed mode:\n\tgame - window fullscreen\n\tgame -window windowed" << std::endl;
     
-    /*width = 1200;
-    height = 600;*/
     
 
     while (restartClient)
     {
         glfw_framework = new Game_Framework;
         restartClient = false;
-        glfw_framework->ChangePreInitStats(width, height, false);
+        glfw_framework->ChangePreInitStats(width, height, fullscreen);
         run(glfw_framework);
     }
 

@@ -11,6 +11,8 @@
 #include <vector>
 #include <map>
 
+#define DEBUG
+
 using namespace irrklang;
 
 extern int GLOBAL_SCREEN_WIDTH;
@@ -136,6 +138,12 @@ public:
 
 	//window
 	GLFWwindow* window;
+
+	//monitor
+	GLFWmonitor* monitor;
+
+	//mode
+	const GLFWvidmode* mode;
 
 	//shader
 	Shader shader;

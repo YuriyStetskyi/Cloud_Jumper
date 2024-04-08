@@ -158,7 +158,7 @@ void Game_Framework::onKeyReleased(FRKey k)
 
 const char* Game_Framework::GetTitle()
 {
-	return "Cloud Jump";
+	return "Cloud Jumper";
 }
 
 Game_Framework::~Game_Framework()
@@ -168,6 +168,7 @@ Game_Framework::~Game_Framework()
 
 void Game_Framework::ChangePreInitStats(int width, int height, bool fullscreen)
 {
+
 	screen_width = width;
 	screen_height = height;
 	screen_fullscreen = fullscreen;
