@@ -51,6 +51,11 @@ public:
 	static SpriteData spr_number_8;
 	static SpriteData spr_number_9;
 
+	static SpriteData spr_button_Play_passive;
+	static SpriteData spr_button_Play_active;
+	static SpriteData spr_button_Quit_passive;
+	static SpriteData spr_button_Quit_active;
+
 	static std::unordered_map < int, SpriteData> numbers;
 
 	bool lengthenScreen;

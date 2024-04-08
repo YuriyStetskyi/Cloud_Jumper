@@ -98,6 +98,11 @@ void GameData::InitSprites()
 	spr_enemy.Set(createSprite(GetSpritePath("cloud_evil.png").c_str()));
 	spr_shield.Set(createSprite(GetSpritePath("shield.png").c_str()));
 	spr_coin.Set(createSprite(GetSpritePath("star.png").c_str()));
+
+	spr_button_Play_passive.Set(createSprite(GetSpritePath("button_Play_passive.png").c_str()));
+	spr_button_Play_active.Set(createSprite(GetSpritePath("button_Play_active.png").c_str()));
+	spr_button_Quit_passive.Set(createSprite(GetSpritePath("button_Quit_passive.png").c_str()));
+	spr_button_Quit_active.Set(createSprite(GetSpritePath("button_Quit_active.png").c_str()));
 #endif // DEBUG
 
 #ifndef DEBUG
@@ -109,6 +114,11 @@ void GameData::InitSprites()
 	spr_enemy.Set(createSprite("Sprites\\cloud_evil.png"));
 	spr_shield.Set(createSprite("Sprites\\shield.png"));
 	spr_coin.Set(createSprite("Sprites\\star.png"));
+
+	spr_button_Play_passive.Set(createSprite("Sprites\\button_Play_passive.png"));
+	spr_button_Play_active.Set(createSprite("Sprites\\button_Play_active.png"));
+	spr_button_Quit_passive.Set(createSprite("Sprites\\button_Quit_passive.png"));
+	spr_button_Quit_active.Set(createSprite("Sprites\\button_Quit_active.png"));
 #endif // !DEBUG
 
 
@@ -226,6 +236,11 @@ SpriteData GameData::spr_number_6(nullptr);
 SpriteData GameData::spr_number_7(nullptr);
 SpriteData GameData::spr_number_8(nullptr);
 SpriteData GameData::spr_number_9(nullptr);
+
+SpriteData GameData::spr_button_Play_passive(nullptr);
+SpriteData GameData::spr_button_Play_active(nullptr);
+SpriteData GameData::spr_button_Quit_passive(nullptr);
+SpriteData GameData::spr_button_Quit_active(nullptr);
 
 unsigned int GameData::trackedScore = 0;
 unsigned int GameData::trackedPlatforms = 0;

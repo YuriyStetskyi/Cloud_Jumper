@@ -235,7 +235,7 @@ void PlayerCharacter::JumpOnCollision(std::unordered_map<int, Actor*> platforms,
 			currentVerticalVelocity = startingVelocity;
 			Jump(DeltaTime);
 
-			if (platform.second->platformType == "timed")
+			if (platform.second->spriteType == "timed")
 				platform.second->toBeDestroyed = true;
 
 			GLFW_Framework::SoundEngine->play2D(GameData::soundPaths.at(Sounds::SOUND_JUMP)->getSoundSource(), false);

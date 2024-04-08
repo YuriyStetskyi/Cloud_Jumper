@@ -18,10 +18,12 @@ bool Game_Framework::Init()
 	targetFPS = 144.0f;
 
 	//initialization
+	isMainMenu = true;
 	gd.Init();
 	player = new PlayerCharacter;
 
 	layer_background = gd.GetBackgroundToDraw();
+	layer_mainMenu = GetMainMenuToDraw();
 	layer_platforms = GeneratePlatforms((screen_width * screen_height) / 16000); //nice proportion of platforms/screenArea
 	layer_player.clear();
 	layer_player.push_back(player);
@@ -51,7 +53,7 @@ bool Game_Framework::Tick()
 	if (!closeGame)
 	{
 		std::chrono::steady_clock::time_point frameStart = std::chrono::steady_clock().now();
-		HandleGameOver();
+
 		dtSUM += DeltaTime;
 		if (DeltaTime > highestThisSecond)
 			highestThisSecond = DeltaTime;
@@ -63,27 +65,32 @@ bool Game_Framework::Tick()
 			dtSUM = 0;
 		}
 
+		if (isMainMenu)
+		{
+			HandleDrawing_Menu();
+			HandleMainMenu();
+		}
+		else
+		{
 
-		HandlePlayerLogic();
+			HandleGameOver();
+			HandlePlayerLogic();
 
-		HandleObjects_Lifetime();
-		CalculateScore();
-		HandleScore_Pixels();
-		HandleScore_Platforms();
-		HandleScore_Coins();
-		HandleTimedPlatforms();
-		HandleShield();
+			HandleObjects_Lifetime();
+			CalculateScore();
+			HandleScore_Pixels();
+			HandleScore_Platforms();
+			HandleScore_Coins();
+			HandleTimedPlatforms();
+			HandleShield();
+			HandleDrawing();
 
-		HandleDrawing();
-
-
+		}
 		drawer.Draw();
 		drawer.Clear();
-
 		std::chrono::steady_clock::time_point frameEnd = std::chrono::steady_clock().now();
 		std::chrono::duration<float> elapsedTime = frameEnd - frameStart;
 		LimitFPS(targetFPS, elapsedTime);
-
 		return false;
 	}
 	else
@@ -103,7 +110,20 @@ void Game_Framework::onMouseMove(int x, int y, int xrelative, int yrelative)
 
 void Game_Framework::onMouseButtonClick(FRMouseButton button, bool isReleased)
 {
-	if (button == FRMouseButton::LEFT && !isReleased)
+
+	if (button == FRMouseButton::LEFT && isReleased && isMainMenu)
+	{
+		if (layer_mainMenu[0]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY)))
+		{
+			isMainMenu = false;
+		}
+		else if (layer_mainMenu[1]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY)))
+		{
+			closeGame = true;
+		}
+	}
+
+	if (button == FRMouseButton::LEFT && !isReleased && !isMainMenu)
 	{
 		layer_projectiles.emplace(Actor::counter, new Actor(Vector2D(player->GetSpriteLocation().X, player->GetSpriteLocation().Y), PROJECTILES));
 		layer_projectiles[Actor::counter]->projectileDestination = Vector2D(mouseX, mouseY);
@@ -120,6 +140,18 @@ void Game_Framework::onMouseButtonClick(FRMouseButton button, bool isReleased)
 		//play sound
 		SoundEngine->play2D(GameData::soundPaths.at(Sounds::SOUND_SHIELD_ENGAGE)->getSoundSource(), false);
 		SoundEngine->play2D(GameData::soundPaths.at(Sounds::AMBIENT_SHIELD_5S)->getSoundSource(), false);
+	}
+
+	if (button == FRMouseButton::MIDDLE && !isReleased)
+	{
+		if (isMainMenu)
+		{
+			isMainMenu = false;
+		}
+		else
+		{
+			isMainMenu = true;
+		}
 	}
 }
 
@@ -225,6 +257,50 @@ void Game_Framework::HandleDrawing()
 	drawer.AddToDraw<Actor>(layer_shield, SHIELD);
 	drawer.AddToDraw<Actor>(layer_coins, COINS);
 	drawer.AddToDraw<Actor>(layer_scoreCoins, SCORE);
+}
+
+void Game_Framework::HandleDrawing_Menu()
+{
+	drawer.AddToDraw<std::pair<Sprite*, Vector2D>>(layer_background, BACKGROUND);
+	drawer.AddToDraw<Actor>(layer_mainMenu, MAINMENU);
+}
+
+void Game_Framework::HandleMainMenu()
+{
+	if (layer_mainMenu[0]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY))
+		&& layer_mainMenu[0]->spriteType != "button_Play_active")
+	{
+		layer_mainMenu[0] = new Actor(Vector2D(100, screen_height - 600), "button_Play_active", MAINMENU);
+	}
+
+	if (layer_mainMenu[1]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY))
+		&& layer_mainMenu[0]->spriteType != "button_Quit_active")
+	{
+		layer_mainMenu[1] = new Actor(Vector2D(100, screen_height - 300), "button_Quit_active", MAINMENU);
+	}
+
+	if (!layer_mainMenu[0]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY))
+		&& layer_mainMenu[0]->spriteType != "button_Play_passive")
+	{
+		layer_mainMenu[0] = new Actor(Vector2D(100, screen_height - 600), "button_Play_passive", MAINMENU);
+	}
+
+	if (!layer_mainMenu[1]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY))
+		&& layer_mainMenu[0]->spriteType != "button_Quit_passive")
+	{
+		layer_mainMenu[1] = new Actor(Vector2D(100, screen_height - 300), "button_Quit_passive", MAINMENU);
+	}
+}
+
+std::unordered_map<int, Actor*> Game_Framework::GetMainMenuToDraw()
+{
+	std::unordered_map<int, Actor*> mMenu;
+	mMenu.emplace(0, new Actor(Vector2D(100, screen_height - 600), "button_Play_passive", MAINMENU));
+	mMenu.emplace(1, new Actor(Vector2D(100, screen_height - 300), "button_Quit_passive", MAINMENU));
+
+	
+
+	return mMenu;
 }
 
 std::unordered_map<int, Actor*> Game_Framework::GeneratePlatforms(int count)

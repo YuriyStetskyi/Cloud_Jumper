@@ -9,6 +9,7 @@ void Drawer::Draw()
 {
 	//order matters
 	Draw_Layer(BACKGROUND);
+	Draw_Layer(MAINMENU);
 	Draw_Layer(PLATFORMS);
 	Draw_Layer(COINS);
 	Draw_Layer(ENEMIES);
@@ -25,6 +26,14 @@ void Drawer::Draw_Layer(DrawLayer layer)
 	case BACKGROUND:
 	{
 		for (std::pair<Sprite*, Vector2D> item : layer_background)
+		{
+			drawSprite(item.first, item.second.X, item.second.Y);
+		}
+		break;
+	}
+	case MAINMENU:
+	{
+		for (std::pair<Sprite*, Vector2D> item : layer_mainMenu)
 		{
 			drawSprite(item.first, item.second.X, item.second.Y);
 		}
@@ -89,6 +98,7 @@ void Drawer::Draw_Layer(DrawLayer layer)
 void Drawer::Clear()
 {
 	layer_background.clear();
+	layer_mainMenu.clear();
 	layer_player.clear();
 	layer_platforms.clear();
 	layer_projectiles.clear();
@@ -161,6 +171,14 @@ void Drawer::AddToDraw<Actor>(std::unordered_map<int, Actor*> items, DrawLayer l
 {
 	switch (layer)
 	{
+	case MAINMENU:
+	{
+		for (std::pair<int, Actor*> UIelement : items)
+		{
+			if (UIelement.second)
+				layer_mainMenu.push_back(std::make_pair(UIelement.second->GetSprite(), UIelement.second->GetSpriteLocation()));
+		}
+	}
 	case PLATFORMS:
 	{
 		for (std::pair<int, Actor*> platform : items)

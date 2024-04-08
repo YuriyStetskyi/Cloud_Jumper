@@ -43,6 +43,9 @@ public:
 	//close condition
 	bool closeGame;
 
+	//menu condition
+	bool isMainMenu;
+
 	//deltatime calculation + fps limiter
 	float DeltaTime;
 	void ComputeDeltaTime(float& DeltaTime);
@@ -57,6 +60,7 @@ public:
 	//drawing
 	Drawer drawer;
 	std::vector < std::pair<Sprite*, Vector2D> >layer_background;
+	std::unordered_map<int, Actor*> layer_mainMenu;
 	std::unordered_map<int, Actor*> layer_platforms;
 	std::vector < PlayerCharacter* >layer_player;
 	std::unordered_map<int, Actor*> layer_projectiles;
@@ -67,9 +71,13 @@ public:
 	std::unordered_map<int, Actor*> layer_shield;
 	std::vector<Actor*> layer_scoreCoins;
 
+	std::unordered_map<int, Actor*> GetMainMenuToDraw();
 	std::unordered_map<int, Actor*>GeneratePlatforms(int count);
 	void HandlePlayerLogic();
 	void HandleDrawing();
+
+	void HandleDrawing_Menu();
+	void HandleMainMenu();
 	//player
 	PlayerCharacter* player;
 

@@ -16,6 +16,7 @@ struct BoxCollider
 	int WIDTH;
 	int HEIGHT;
 
+	bool isHovered(Vector2D mouseLocation);
 	static bool AreColliding(const BoxCollider& b1, const BoxCollider& b2);
 };
 
@@ -26,7 +27,7 @@ public:
 	Actor(DrawLayer drawLayer);
 	Actor(Vector2D location, DrawLayer drawLayer);
 	Actor(Vector2D location, int digit, DrawLayer drawLayer);
-	Actor(Vector2D location, std::string platformType, DrawLayer drawLayer);
+	Actor(Vector2D location, std::string spriteType, DrawLayer drawLayer);
 
 	bool Init();
 	void SetSprite(DrawLayer drawLayer);
@@ -52,7 +53,7 @@ public:
 
 	bool passedByPlayer;
 	int digit;
-	std::string platformType;
+	std::string spriteType;
 	bool toBeDestroyed;
 	float timeAfterSteppedOn;
 	float timeAfterShieldUsed;

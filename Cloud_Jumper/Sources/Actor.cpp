@@ -8,7 +8,7 @@ BoxCollider::BoxCollider()
 BoxCollider::BoxCollider(Vector2D location, Vector2D dimensions)
 {
 	X = location.X;
-	Y = location.Y + dimensions.Y;
+	Y = location.Y;
 	WIDTH = dimensions.X;
 	HEIGHT = dimensions.Y;
 }
@@ -16,9 +16,22 @@ BoxCollider::BoxCollider(Vector2D location, Vector2D dimensions)
 void BoxCollider::Set(Vector2D location, Vector2D dimensions)
 {
 	X = location.X;
-	Y = location.Y + dimensions.Y;
+	Y = location.Y;
 	WIDTH = dimensions.X;
 	HEIGHT = dimensions.Y;
+}
+
+bool BoxCollider::isHovered(Vector2D mouseLocation)
+{
+	if (mouseLocation.X >= X && mouseLocation.X <= X + WIDTH
+		&& mouseLocation.Y >= Y && mouseLocation.Y <= Y + HEIGHT)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 bool BoxCollider::AreColliding(const BoxCollider& b1, const BoxCollider& b2)
@@ -44,7 +57,7 @@ Actor::Actor(DrawLayer drawLayer)
 	cashedPlayerLocation(0, 0),
 	passedByPlayer(false),
 	digit(0),
-	platformType(""),
+	spriteType(""),
 	toBeDestroyed(false),
 	timeAfterSteppedOn(0.0f),
 	timeAfterShieldUsed(0.0f)
@@ -72,10 +85,10 @@ Actor::Actor(Vector2D location, int digit, DrawLayer drawLayer)
 	SetSprite(drawLayer); //calling this twice is bad and a crutch - fix later
 }
 
-Actor::Actor(Vector2D location, std::string platformType, DrawLayer drawLayer)
+Actor::Actor(Vector2D location, std::string spriteType, DrawLayer drawLayer)
 	:Actor::Actor(location, drawLayer)
 {
-	this->platformType = platformType;
+	this->spriteType = spriteType;
 	SetSprite(drawLayer);
 	SetColliderDimensions(GetSpriteDimensions().X, GetSpriteDimensions().Y);
 	collider.Set(collider_location, collider_dimensions);
@@ -104,15 +117,44 @@ void Actor::SetSprite(DrawLayer drawLayer)
 		sprite_dimensions.Y = GameData::spr_background.height;
 		break;
 	}
+	case MAINMENU:
+	{
+		if (spriteType == "button_Play_passive")
+		{
+			actorSprite = GameData::spr_button_Play_passive.sprite;
+			sprite_dimensions.X = GameData::spr_button_Play_passive.width;
+			sprite_dimensions.Y = GameData::spr_button_Play_passive.height;
+		}
+		else if (spriteType == "button_Quit_passive")
+		{
+			actorSprite = GameData::spr_button_Quit_passive.sprite;
+			sprite_dimensions.X = GameData::spr_button_Quit_passive.width;
+			sprite_dimensions.Y = GameData::spr_button_Quit_passive.height;
+		}
+		else if (spriteType == "button_Play_active")
+		{
+			actorSprite = GameData::spr_button_Play_active.sprite;
+			sprite_dimensions.X = GameData::spr_button_Play_active.width;
+			sprite_dimensions.Y = GameData::spr_button_Play_active.height;
+		}
+		else if (spriteType == "button_Quit_active")
+		{
+			actorSprite = GameData::spr_button_Quit_active.sprite;
+			sprite_dimensions.X = GameData::spr_button_Quit_active.width;
+			sprite_dimensions.Y = GameData::spr_button_Quit_active.height;
+		}
+
+		break;
+	}
 	case PLATFORMS:
 	{
-		if (platformType == "normal")
+		if (spriteType == "normal")
 		{
 			actorSprite = GameData::spr_platform.sprite;
 			sprite_dimensions.X = GameData::spr_platform.width;
 			sprite_dimensions.Y = GameData::spr_platform.height;
 		}
-		else if (platformType == "timed")
+		else if (spriteType == "timed")
 		{
 			actorSprite = GameData::spr_platform_timed.sprite;
 			sprite_dimensions.X = GameData::spr_platform_timed.width;
