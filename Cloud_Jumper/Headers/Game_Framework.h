@@ -13,7 +13,7 @@
 #include "Actor.h"
 #include <algorithm>
 #include <unordered_map>
-//#include "Platform.h"
+#include <fstream>
 #include "MyEnums.h"
 
 
@@ -67,6 +67,7 @@ public:
 	std::unordered_map<int, Actor*> layer_enemies;
 	std::unordered_map<int, Actor*> layer_coins;
 	std::vector<Actor*> layer_score;
+	std::vector<Actor*> layer_highScore;
 	std::vector<Actor*> layer_scorePlatforms;
 	std::unordered_map<int, Actor*> layer_shield;
 	std::vector<Actor*> layer_scoreCoins;
@@ -114,13 +115,15 @@ public:
 	//handling platfroms display
 
 	void HandleScore_Platforms();
-
-
 	void HandleTimedPlatforms();
 	void HandleShield();
-
 	void HandleScore_Coins();
 
+	void SaveHighScore();
+	void LoadSaveFile();
+	bool highScored;
+
+	std::string saveFile;
 };
 
 

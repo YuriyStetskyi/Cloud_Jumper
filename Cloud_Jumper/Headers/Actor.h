@@ -57,9 +57,9 @@ public:
 	bool toBeDestroyed;
 	float timeAfterSteppedOn;
 	float timeAfterShieldUsed;
+	Sprite* actorSprite;
 private:
 
-	Sprite* actorSprite;
 	Vector2D sprite_location;
 	Vector2D sprite_dimensions;
 

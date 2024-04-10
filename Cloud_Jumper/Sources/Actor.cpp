@@ -143,6 +143,18 @@ void Actor::SetSprite(DrawLayer drawLayer)
 			sprite_dimensions.X = GameData::spr_button_Quit_active.width;
 			sprite_dimensions.Y = GameData::spr_button_Quit_active.height;
 		}
+		else if (spriteType == "highScore")
+		{
+			actorSprite = GameData::spr_highScore.sprite;
+			sprite_dimensions.X = GameData::spr_highScore.width;
+			sprite_dimensions.Y = GameData::spr_highScore.height;
+		}
+		else if (spriteType == "newBest")
+		{
+			actorSprite = GameData::spr_newBest.sprite;
+			sprite_dimensions.X = GameData::spr_newBest.width;
+			sprite_dimensions.Y = GameData::spr_newBest.height;
+		}
 
 		break;
 	}

@@ -7,7 +7,7 @@
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #define STB_IMAGE_RESIZE_IMPLEMENTATION
 
-//#define DEBUG
+
 
 //#include "GLFW_Framework.h"
 #include "Game_Framework.h"

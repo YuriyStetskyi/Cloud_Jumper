@@ -22,6 +22,9 @@ bool Game_Framework::Init()
 	gd.Init();
 	player = new PlayerCharacter;
 
+	saveFile = "saveFile.dat";
+	LoadSaveFile();
+
 	layer_background = gd.GetBackgroundToDraw();
 	layer_mainMenu = GetMainMenuToDraw();
 	layer_platforms = GeneratePlatforms((screen_width * screen_height) / 16000); //nice proportion of platforms/screenArea
@@ -31,13 +34,13 @@ bool Game_Framework::Init()
 	layer_enemies.clear();
 	layer_shield.clear();
 	layer_coins.clear();
+	//layer_highScore.clear();
 
 	gd.soundPaths.at(Sounds::AMBIENT_BIRDS)->setIsPaused(false);
 	
 
 
-	GameData::trackedScore = 0;
-
+	highScored = false;
 	return true;
 }
 
@@ -91,10 +94,12 @@ bool Game_Framework::Tick()
 		std::chrono::steady_clock::time_point frameEnd = std::chrono::steady_clock().now();
 		std::chrono::duration<float> elapsedTime = frameEnd - frameStart;
 		LimitFPS(targetFPS, elapsedTime);
+	
 		return false;
 	}
 	else
 	{
+
 		SoundEngine->stopAllSounds();
 		return true;
 	}
@@ -113,13 +118,16 @@ void Game_Framework::onMouseButtonClick(FRMouseButton button, bool isReleased)
 
 	if (button == FRMouseButton::LEFT && isReleased && isMainMenu)
 	{
-		if (layer_mainMenu[0]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY)))
+		if (layer_mainMenu[0] && layer_mainMenu[1])
 		{
-			isMainMenu = false;
-		}
-		else if (layer_mainMenu[1]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY)))
-		{
-			closeGame = true;
+			if (layer_mainMenu[0]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY)))
+			{
+				isMainMenu = false;
+			}
+			else if (layer_mainMenu[1]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY)))
+			{
+				closeGame = true;
+			}
 		}
 	}
 
@@ -257,12 +265,14 @@ void Game_Framework::HandleDrawing()
 	drawer.AddToDraw<Actor>(layer_shield, SHIELD);
 	drawer.AddToDraw<Actor>(layer_coins, COINS);
 	drawer.AddToDraw<Actor>(layer_scoreCoins, SCORE);
+
 }
 
 void Game_Framework::HandleDrawing_Menu()
 {
 	drawer.AddToDraw<std::pair<Sprite*, Vector2D>>(layer_background, BACKGROUND);
 	drawer.AddToDraw<Actor>(layer_mainMenu, MAINMENU);
+	drawer.AddToDraw<Actor>(layer_highScore, SCORE);
 }
 
 void Game_Framework::HandleMainMenu()
@@ -270,36 +280,42 @@ void Game_Framework::HandleMainMenu()
 	if (layer_mainMenu[0]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY))
 		&& layer_mainMenu[0]->spriteType != "button_Play_active")
 	{
-		layer_mainMenu[0] = new Actor(Vector2D(100, screen_height - 600), "button_Play_active", MAINMENU);
+		layer_mainMenu[0] = new Actor(Vector2D(100, screen_height - 750), "button_Play_active", MAINMENU);
 	}
 
 	if (layer_mainMenu[1]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY))
 		&& layer_mainMenu[0]->spriteType != "button_Quit_active")
 	{
-		layer_mainMenu[1] = new Actor(Vector2D(100, screen_height - 300), "button_Quit_active", MAINMENU);
+		layer_mainMenu[1] = new Actor(Vector2D(100, screen_height - 500), "button_Quit_active", MAINMENU);
 	}
 
 	if (!layer_mainMenu[0]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY))
 		&& layer_mainMenu[0]->spriteType != "button_Play_passive")
 	{
-		layer_mainMenu[0] = new Actor(Vector2D(100, screen_height - 600), "button_Play_passive", MAINMENU);
+		layer_mainMenu[0] = new Actor(Vector2D(100, screen_height - 750), "button_Play_passive", MAINMENU);
 	}
 
 	if (!layer_mainMenu[1]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY))
 		&& layer_mainMenu[0]->spriteType != "button_Quit_passive")
 	{
-		layer_mainMenu[1] = new Actor(Vector2D(100, screen_height - 300), "button_Quit_passive", MAINMENU);
+		layer_mainMenu[1] = new Actor(Vector2D(100, screen_height - 500), "button_Quit_passive", MAINMENU);
 	}
+
 }
 
 std::unordered_map<int, Actor*> Game_Framework::GetMainMenuToDraw()
 {
 	std::unordered_map<int, Actor*> mMenu;
-	mMenu.emplace(0, new Actor(Vector2D(100, screen_height - 600), "button_Play_passive", MAINMENU));
-	mMenu.emplace(1, new Actor(Vector2D(100, screen_height - 300), "button_Quit_passive", MAINMENU));
+	mMenu.emplace(0, new Actor(Vector2D(100, screen_height - 750), "button_Play_passive", MAINMENU));
+	mMenu.emplace(1, new Actor(Vector2D(100, screen_height - 500), "button_Quit_passive", MAINMENU));
+	mMenu.emplace(2, new Actor(Vector2D(100, screen_height - 250), "highScore", MAINMENU));
 
+	if (highScored)
+	{
+		mMenu.emplace(3, new Actor(Vector2D(100, screen_height - 250), "newBest", MAINMENU));
+	}
+		
 	
-
 	return mMenu;
 }
 
@@ -449,6 +465,7 @@ void Game_Framework::HandleGameOver()
 	if (player->GetSpriteLocation().Y > (screen_height)) //player fell
 	{
 		//restart game
+		SaveHighScore();
 		Init();
 	}
 
@@ -460,6 +477,7 @@ void Game_Framework::HandleGameOver()
 		if (hitEnemy && player->isJumping && !player->isImmune) //player hit enemy
 		{
 			//restart game
+			SaveHighScore();
 			Init();
 			return;
 		}
@@ -499,7 +517,6 @@ void Game_Framework::HandleScore_Pixels()
 	{
 		int digit = l_score % 10;
 
-
 		layer_score.push_back(new Actor(Vector2D(position * 0, 0), digit, SCORE));
 		position++;
 		l_score /= 10;
@@ -519,7 +536,6 @@ void Game_Framework::HandleScore_Pixels()
 	{
 		layer_score.push_back(new Actor(Vector2D(0, 10), 0, SCORE));
 	}
-
 
 }
 
@@ -633,4 +649,60 @@ void Game_Framework::HandleScore_Coins()
 		layer_scoreCoins.push_back(new Actor(Vector2D(0, 90), 0, SCORE));
 		layer_scoreCoins.push_back(new Actor(Vector2D(30, 90), -1, SCORE));
 	}
+}
+
+void Game_Framework::SaveHighScore()
+{
+	if (GameData::trackedScore > GameData::trackedHighScore)
+	{
+		highScored = true;
+		layer_highScore = layer_score;
+		GameData::trackedHighScore = GameData::trackedScore;
+		for (Actor* item : layer_highScore)
+		{
+			Vector2D locationInUI(item->GetSpriteLocation().X + 650, item->GetSpriteLocation().Y + screen_height - 150);
+			item->SetSpriteLocation(locationInUI);
+		}
+
+		std::fstream output;
+		output.open(saveFile, std::fstream::out);
+
+		if (output.is_open())
+		{
+			//write highscore (int)
+			output.write((char*)(&GameData::trackedHighScore), sizeof(unsigned int));
+		}
+
+		output.close();
+	}
+}
+
+void Game_Framework::LoadSaveFile()
+{
+	layer_highScore;
+	GameData::trackedHighScore;
+
+	std::fstream input;
+	input.open(saveFile, std::fstream::in);
+	
+	//read highscore number
+	unsigned int scr = 0;
+	
+	while (input.read((char*)(&scr), sizeof(unsigned int)))
+	{
+		GameData::trackedHighScore = scr;
+	}
+
+	GameData::trackedScore = GameData::trackedHighScore; //do this for next method to work
+	HandleScore_Pixels();
+	layer_highScore = layer_score;
+	for (Actor* item : layer_highScore)
+	{
+		Vector2D locationInUI(item->GetSpriteLocation().X + 650, item->GetSpriteLocation().Y + screen_height - 150);
+		item->SetSpriteLocation(locationInUI);
+	}
+
+	GameData::trackedScore = 0;
+	input.close();
+
 }

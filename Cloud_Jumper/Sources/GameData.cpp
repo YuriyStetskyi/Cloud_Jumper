@@ -42,6 +42,7 @@ bool GameData::Init()
 
 	trackedScore = 0;
 	trackedPlatforms = 0;
+	//trackedHighScore = 0; <- we want this saved inbetween runs
 
 	return true;
 }
@@ -103,6 +104,9 @@ void GameData::InitSprites()
 	spr_button_Play_active.Set(createSprite(GetSpritePath("button_Play_active.png").c_str()));
 	spr_button_Quit_passive.Set(createSprite(GetSpritePath("button_Quit_passive.png").c_str()));
 	spr_button_Quit_active.Set(createSprite(GetSpritePath("button_Quit_active.png").c_str()));
+	spr_highScore.Set(createSprite(GetSpritePath("highScore.png").c_str()));
+	spr_newBest.Set(createSprite(GetSpritePath("newBest.png").c_str()));
+	
 #endif // DEBUG
 
 #ifndef DEBUG
@@ -119,6 +123,8 @@ void GameData::InitSprites()
 	spr_button_Play_active.Set(createSprite("Sprites\\button_Play_active.png"));
 	spr_button_Quit_passive.Set(createSprite("Sprites\\button_Quit_passive.png"));
 	spr_button_Quit_active.Set(createSprite("Sprites\\button_Quit_active.png"));
+	spr_highScore.Set(createSprite("Sprites\\highScore.png"));
+	spr_newBest.Set(createSprite("Sprites\\newBest.png"));
 #endif // !DEBUG
 
 
@@ -241,9 +247,12 @@ SpriteData GameData::spr_button_Play_passive(nullptr);
 SpriteData GameData::spr_button_Play_active(nullptr);
 SpriteData GameData::spr_button_Quit_passive(nullptr);
 SpriteData GameData::spr_button_Quit_active(nullptr);
+SpriteData GameData::spr_highScore(nullptr);
+SpriteData GameData::spr_newBest(nullptr);
 
 unsigned int GameData::trackedScore = 0;
 unsigned int GameData::trackedPlatforms = 0;
+unsigned int GameData::trackedHighScore = 0;
 
 int GameData::spawnRate_enemy = 0;
 int GameData::spawnRate_timedPlatform = 0;

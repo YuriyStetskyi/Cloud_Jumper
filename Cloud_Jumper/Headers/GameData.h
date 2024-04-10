@@ -55,6 +55,8 @@ public:
 	static SpriteData spr_button_Play_active;
 	static SpriteData spr_button_Quit_passive;
 	static SpriteData spr_button_Quit_active;
+	static SpriteData spr_highScore;
+	static SpriteData spr_newBest;
 
 	static std::unordered_map < int, SpriteData> numbers;
 
@@ -64,6 +66,7 @@ public:
 	//score
 	static unsigned int trackedScore;
 	static unsigned int trackedPlatforms;
+	static unsigned int trackedHighScore;
 
 	static int spawnRate_enemy;
 	static int spawnRate_timedPlatform;
