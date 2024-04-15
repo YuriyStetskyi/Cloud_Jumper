@@ -51,6 +51,17 @@ public:
 	static SpriteData spr_number_8;
 	static SpriteData spr_number_9;
 
+	static SpriteData menu_spr_number_0;
+	static SpriteData menu_spr_number_1;
+	static SpriteData menu_spr_number_2;
+	static SpriteData menu_spr_number_3;
+	static SpriteData menu_spr_number_4;
+	static SpriteData menu_spr_number_5;
+	static SpriteData menu_spr_number_6;
+	static SpriteData menu_spr_number_7;
+	static SpriteData menu_spr_number_8;
+	static SpriteData menu_spr_number_9;
+
 	static SpriteData spr_button_Play_passive;
 	static SpriteData spr_button_Play_active;
 	static SpriteData spr_button_Quit_passive;
@@ -59,6 +70,7 @@ public:
 	static SpriteData spr_newBest;
 
 	static std::unordered_map < int, SpriteData> numbers;
+	static std::unordered_map < int, SpriteData> menu_numbers;
 
 	bool lengthenScreen;
 	int lengthen_startCoord_Y;

@@ -17,6 +17,8 @@ public:
 
 	std::vector < std::pair<Sprite*, Vector2D> >layer_mainMenu;
 
+	std::vector < std::pair<Sprite*, Vector2D> >layer_menuScore;
+
 	std::vector < std::pair<Sprite*, Vector2D> >layer_player;
 
 	std::vector < std::pair<Sprite*, Vector2D> >layer_platforms;

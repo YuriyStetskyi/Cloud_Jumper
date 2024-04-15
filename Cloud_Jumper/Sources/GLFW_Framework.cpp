@@ -4,6 +4,8 @@
 
 int GLOBAL_SCREEN_WIDTH;
 int GLOBAL_SCREEN_HEIGHT;
+int GLOBAL_DISPLAY_WIDTH;
+int GLOBAL_DISPLAY_HEIGHT;
 int GLOBAL_FULLSCREEN;
 
 ISoundEngine* SoundEngine;
@@ -391,6 +393,7 @@ bool GLFW_Framework::runInit(GLFW_Framework* framework)
 	}
 	
 	SoundEngine = createIrrKlangDevice();
+	framework->DisplayTips(); //do it here because irrklang init types bunch of text in console
 	framework->setTitle();
 	
 	setupGLFWandGLAD(framework);
@@ -459,6 +462,13 @@ const char* GLFW_Framework::GetTitle()
 	return "default window";
 }
 
+void GLFW_Framework::DisplayTips()
+{
+	system("CLS");
+	std::cout << "To change resolution use command:\n\tgame -window 'width'x'height'" << std::endl;
+	std::cout << "To make game fullscreen or windowed mode:\n\tgame - window fullscreen\n\tgame -window windowed" << std::endl;
+}
+
 void calculateSpriteVertices(Sprite* sprite, float* vertices, int arrSize)
 {
 	//top-right
@@ -523,6 +533,8 @@ void setupGLFWandGLAD(GLFW_Framework* framework)
 
 	framework->monitor = glfwGetPrimaryMonitor();
 	framework->mode = glfwGetVideoMode(framework->monitor);
+	GLOBAL_DISPLAY_WIDTH = framework->mode->width;
+	GLOBAL_DISPLAY_HEIGHT = framework->mode->height;
 	
 	if (framework->screen_fullscreen)
 	{
@@ -531,7 +543,6 @@ void setupGLFWandGLAD(GLFW_Framework* framework)
 		GLOBAL_SCREEN_WIDTH = framework->mode->width;
 		GLOBAL_SCREEN_HEIGHT = framework->mode->height;
 	}
-
 
 	framework->window = glfwCreateWindow(framework->screen_width, framework->screen_height, framework->title.c_str(), NULL, NULL);
 	glfwSetWindowShouldClose(framework->window, 0);
@@ -597,7 +608,6 @@ void setupGlobals(GLFW_Framework* framework)
 	GLOBAL_SCREEN_HEIGHT = framework->screen_height;
 }
 
-
 int run(GLFW_Framework* framework)
 {
 	/*framework->monitor = glfwGetPrimaryMonitor();
@@ -613,8 +623,6 @@ int run(GLFW_Framework* framework)
 	setupGlobals(framework);
 	if (framework->runInit(framework))
 	{
-		
-
 		setupTextureParameters();
 		setupShaders(framework);
 

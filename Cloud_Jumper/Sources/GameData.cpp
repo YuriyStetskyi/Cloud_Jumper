@@ -133,6 +133,7 @@ void GameData::InitSprites()
 void GameData::InitNumberSprites()
 {
 #ifdef DEBUG
+	//ingame numbers
 	spr_number_0.Set(createSprite(GetSpritePath("number_0.png").c_str()));
 	spr_number_1.Set(createSprite(GetSpritePath("number_1.png").c_str()));
 	spr_number_2.Set(createSprite(GetSpritePath("number_2.png").c_str()));
@@ -143,9 +144,22 @@ void GameData::InitNumberSprites()
 	spr_number_7.Set(createSprite(GetSpritePath("number_7.png").c_str()));
 	spr_number_8.Set(createSprite(GetSpritePath("number_8.png").c_str()));
 	spr_number_9.Set(createSprite(GetSpritePath("number_9.png").c_str()));
+
+	//menu numbers
+	menu_spr_number_0.Set(createSprite(GetSpritePath("menu_number_0.png").c_str()));
+	menu_spr_number_1.Set(createSprite(GetSpritePath("menu_number_1.png").c_str()));
+	menu_spr_number_2.Set(createSprite(GetSpritePath("menu_number_2.png").c_str()));
+	menu_spr_number_3.Set(createSprite(GetSpritePath("menu_number_3.png").c_str()));
+	menu_spr_number_4.Set(createSprite(GetSpritePath("menu_number_4.png").c_str()));
+	menu_spr_number_5.Set(createSprite(GetSpritePath("menu_number_5.png").c_str()));
+	menu_spr_number_6.Set(createSprite(GetSpritePath("menu_number_6.png").c_str()));
+	menu_spr_number_7.Set(createSprite(GetSpritePath("menu_number_7.png").c_str()));
+	menu_spr_number_8.Set(createSprite(GetSpritePath("menu_number_8.png").c_str()));
+	menu_spr_number_9.Set(createSprite(GetSpritePath("menu_number_9.png").c_str()));
 #endif // DEBUG
 
 #ifndef DEBUG
+	//ingame numbers
 	spr_number_0.Set(createSprite("Sprites\\number_0.png"));
 	spr_number_1.Set(createSprite("Sprites\\number_1.png"));
 	spr_number_2.Set(createSprite("Sprites\\number_2.png"));
@@ -156,10 +170,22 @@ void GameData::InitNumberSprites()
 	spr_number_7.Set(createSprite("Sprites\\number_7.png"));
 	spr_number_8.Set(createSprite("Sprites\\number_8.png"));
 	spr_number_9.Set(createSprite("Sprites\\number_9.png"));
+
+	//menu numbers
+	menu_spr_number_0.Set(createSprite("Sprites\\menu_number_0.png"));
+	menu_spr_number_1.Set(createSprite("Sprites\\menu_number_1.png"));
+	menu_spr_number_2.Set(createSprite("Sprites\\menu_number_2.png"));
+	menu_spr_number_3.Set(createSprite("Sprites\\menu_number_3.png"));
+	menu_spr_number_4.Set(createSprite("Sprites\\menu_number_4.png"));
+	menu_spr_number_5.Set(createSprite("Sprites\\menu_number_5.png"));
+	menu_spr_number_6.Set(createSprite("Sprites\\menu_number_6.png"));
+	menu_spr_number_7.Set(createSprite("Sprites\\menu_number_7.png"));
+	menu_spr_number_8.Set(createSprite("Sprites\\menu_number_8.png"));
+	menu_spr_number_9.Set(createSprite("Sprites\\menu_number_9.png"));
 #endif // !DEBUG
 
 
-
+	//numbers
 	numbers.emplace(0, spr_number_0);
 	numbers.emplace(1, spr_number_1);
 	numbers.emplace(2, spr_number_2);
@@ -170,6 +196,18 @@ void GameData::InitNumberSprites()
 	numbers.emplace(7, spr_number_7);
 	numbers.emplace(8, spr_number_8);
 	numbers.emplace(9, spr_number_9);
+
+	//menu numbers
+	menu_numbers.emplace(0, menu_spr_number_0);
+	menu_numbers.emplace(1, menu_spr_number_1);
+	menu_numbers.emplace(2, menu_spr_number_2);
+	menu_numbers.emplace(3, menu_spr_number_3);
+	menu_numbers.emplace(4, menu_spr_number_4);
+	menu_numbers.emplace(5, menu_spr_number_5);
+	menu_numbers.emplace(6, menu_spr_number_6);
+	menu_numbers.emplace(7, menu_spr_number_7);
+	menu_numbers.emplace(8, menu_spr_number_8);
+	menu_numbers.emplace(9, menu_spr_number_9);
 }
 
 void GameData::InitSounds()
@@ -232,6 +270,7 @@ SpriteData GameData::spr_enemy(nullptr);
 SpriteData GameData::spr_shield(nullptr);
 SpriteData GameData::spr_coin(nullptr);
 
+//numbers
 SpriteData GameData::spr_number_0(nullptr);
 SpriteData GameData::spr_number_1(nullptr);
 SpriteData GameData::spr_number_2(nullptr);
@@ -242,6 +281,18 @@ SpriteData GameData::spr_number_6(nullptr);
 SpriteData GameData::spr_number_7(nullptr);
 SpriteData GameData::spr_number_8(nullptr);
 SpriteData GameData::spr_number_9(nullptr);
+
+//menu numbers
+SpriteData GameData::menu_spr_number_0(nullptr);
+SpriteData GameData::menu_spr_number_1(nullptr);
+SpriteData GameData::menu_spr_number_2(nullptr);
+SpriteData GameData::menu_spr_number_3(nullptr);
+SpriteData GameData::menu_spr_number_4(nullptr);
+SpriteData GameData::menu_spr_number_5(nullptr);
+SpriteData GameData::menu_spr_number_6(nullptr);
+SpriteData GameData::menu_spr_number_7(nullptr);
+SpriteData GameData::menu_spr_number_8(nullptr);
+SpriteData GameData::menu_spr_number_9(nullptr);
 
 SpriteData GameData::spr_button_Play_passive(nullptr);
 SpriteData GameData::spr_button_Play_active(nullptr);
@@ -259,5 +310,6 @@ int GameData::spawnRate_timedPlatform = 0;
 int GameData::spawnRate_coin = 0;
 
 std::unordered_map < int, SpriteData> GameData::numbers;
+std::unordered_map < int, SpriteData> GameData::menu_numbers;
 
 std::unordered_map<Sounds, ISound*> GameData::soundPaths;

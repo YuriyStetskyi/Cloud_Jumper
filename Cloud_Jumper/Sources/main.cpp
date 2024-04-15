@@ -101,11 +101,7 @@ std::thread console_thread(CheckForResolutionChange, glfw_framework);
 int main()
 {
 	console_thread.detach();
-	std::cout << "To change resolution use command:\n\tgame -window 'width'x'height'" << std::endl;
-    std::cout << "To make game fullscreen or windowed mode:\n\tgame - window fullscreen\n\tgame -window windowed" << std::endl;
     
-    
-
     while (restartClient)
     {
         glfw_framework = new Game_Framework;

@@ -24,9 +24,13 @@ bool Game_Framework::Init()
 
 	saveFile = "saveFile.dat";
 	LoadSaveFile();
+	shouldScaleSprites = true;
+	shouldScaleUP = true;
+	shouldScaleDOWN = true;
 
 	layer_background = gd.GetBackgroundToDraw();
 	layer_mainMenu = GetMainMenuToDraw();
+	//layer_menuScore = GetMenuScoreToDraw();
 	layer_platforms = GeneratePlatforms((screen_width * screen_height) / 16000); //nice proportion of platforms/screenArea
 	layer_player.clear();
 	layer_player.push_back(player);
@@ -34,7 +38,8 @@ bool Game_Framework::Init()
 	layer_enemies.clear();
 	layer_shield.clear();
 	layer_coins.clear();
-	//layer_highScore.clear();
+
+
 
 	gd.soundPaths.at(Sounds::AMBIENT_BIRDS)->setIsPaused(false);
 	
@@ -72,10 +77,11 @@ bool Game_Framework::Tick()
 		{
 			HandleDrawing_Menu();
 			HandleMainMenu();
+			//ScaleMainMenuSprites(1.6f);
 		}
 		else
 		{
-
+			//ScaleMainMenuSprites(1 / 1.6f);
 			HandleGameOver();
 			HandlePlayerLogic();
 
@@ -99,7 +105,6 @@ bool Game_Framework::Tick()
 	}
 	else
 	{
-
 		SoundEngine->stopAllSounds();
 		return true;
 	}
@@ -272,7 +277,8 @@ void Game_Framework::HandleDrawing_Menu()
 {
 	drawer.AddToDraw<std::pair<Sprite*, Vector2D>>(layer_background, BACKGROUND);
 	drawer.AddToDraw<Actor>(layer_mainMenu, MAINMENU);
-	drawer.AddToDraw<Actor>(layer_highScore, SCORE);
+	drawer.AddToDraw<Actor>(layer_highScore, MENUSCORE); //HERE HERE HERE HERE
+	//drawer.AddToDraw<Actor>(layer_menuScore, MENUSCORE);
 }
 
 void Game_Framework::HandleMainMenu()
@@ -314,9 +320,18 @@ std::unordered_map<int, Actor*> Game_Framework::GetMainMenuToDraw()
 	{
 		mMenu.emplace(3, new Actor(Vector2D(100, screen_height - 250), "newBest", MAINMENU));
 	}
-		
+
+	//ScaleSpriteToScreenSize(mMenu);
 	
 	return mMenu;
+}
+
+std::vector<Actor*> Game_Framework::GetMenuScoreToDraw()
+{
+	std::vector<Actor*> result;
+	result.push_back(new Actor(Vector2D(100, 100), 4, MENUSCORE));
+
+	return result;
 }
 
 std::unordered_map<int, Actor*> Game_Framework::GeneratePlatforms(int count)
@@ -656,7 +671,12 @@ void Game_Framework::SaveHighScore()
 	if (GameData::trackedScore > GameData::trackedHighScore)
 	{
 		highScored = true;
-		layer_highScore = layer_score;
+		layer_highScore.clear();
+		for (Actor* item : layer_score)
+		{
+			Actor temp = *item;	
+			layer_highScore.push_back(new Actor(temp.GetSpriteLocation(), temp.digit, MENUSCORE));
+		}
 		GameData::trackedHighScore = GameData::trackedScore;
 		for (Actor* item : layer_highScore)
 		{
@@ -679,14 +699,12 @@ void Game_Framework::SaveHighScore()
 
 void Game_Framework::LoadSaveFile()
 {
-	layer_highScore;
-	GameData::trackedHighScore;
-
 	std::fstream input;
-	input.open(saveFile, std::fstream::in);
-	
-	//read highscore number
+
+	input.open(saveFile, std::fstream::in);	
+
 	unsigned int scr = 0;
+	//read highscore number
 	
 	while (input.read((char*)(&scr), sizeof(unsigned int)))
 	{
@@ -694,15 +712,63 @@ void Game_Framework::LoadSaveFile()
 	}
 
 	GameData::trackedScore = GameData::trackedHighScore; //do this for next method to work
+	layer_score.clear();
+	layer_highScore.clear();
 	HandleScore_Pixels();
-	layer_highScore = layer_score;
+
+	for (Actor* item : layer_score)
+	{
+		Actor temp = *item;
+		layer_highScore.push_back(new Actor(temp.GetSpriteLocation(), temp.digit, MENUSCORE));
+	}
+
 	for (Actor* item : layer_highScore)
 	{
-		Vector2D locationInUI(item->GetSpriteLocation().X + 650, item->GetSpriteLocation().Y + screen_height - 150);
+		Vector2D locationInUI(item->GetSpriteLocation().X + 650, item->GetSpriteLocation().Y + screen_height - 165);
 		item->SetSpriteLocation(locationInUI);
 	}
+
+	ShiftMenuSprites();
+	
 
 	GameData::trackedScore = 0;
 	input.close();
 
+}
+
+void Game_Framework::ShiftMenuSprites()
+{
+	bool first = true;
+	Actor previous;
+	for (Actor* current : layer_highScore)
+	{
+		int shiftedLocation_X = current->GetSpriteLocation().X;
+		if (!first)
+		{
+			shiftedLocation_X = previous.GetSpriteLocation().X + previous.GetSprite()->width;
+		}
+		current->SetSpriteLocation(Vector2D(shiftedLocation_X, current->GetSpriteLocation().Y));
+		previous = *current;
+		first = false;
+	}
+}
+
+
+void Game_Framework::ScaleSpriteToScreenSize(std::unordered_map<int, Actor*> mMenu)
+{
+	float scaleFactorWidth = (float)GLOBAL_SCREEN_WIDTH / (float)GLOBAL_DISPLAY_WIDTH;
+	float scaleFactorHeight = (float)GLOBAL_SCREEN_HEIGHT / (float)GLOBAL_DISPLAY_HEIGHT;
+
+	for (std::pair<int, Actor*> spr : mMenu)
+	{
+		float scaleFactorX = (float)spr.second->GetSpriteLocation().X / (float)GLOBAL_DISPLAY_WIDTH;
+		float scaleFactorY = (float)spr.second->GetSpriteLocation().Y / (float)GLOBAL_DISPLAY_HEIGHT;
+
+		int sprWidth = spr.second->GetSpriteDimensions().X;
+		int sprHeight = spr.second->GetSpriteDimensions().Y;
+		//setSpriteSize(spr.second->GetSprite(), sprWidth * scaleFactorWidth, sprHeight * scaleFactorWidth);
+		int scaledLocationX = GLOBAL_SCREEN_WIDTH * scaleFactorX;
+		int scaledLocationY = GLOBAL_SCREEN_HEIGHT * scaleFactorY;
+		spr.second->SetSpriteLocation(Vector2D(scaledLocationX, scaledLocationY));
+	}
 }

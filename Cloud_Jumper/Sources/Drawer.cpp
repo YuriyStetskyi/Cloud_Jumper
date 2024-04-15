@@ -10,6 +10,7 @@ void Drawer::Draw()
 	//order matters
 	Draw_Layer(BACKGROUND);
 	Draw_Layer(MAINMENU);
+	Draw_Layer(MENUSCORE);
 	Draw_Layer(PLATFORMS);
 	Draw_Layer(COINS);
 	Draw_Layer(ENEMIES);
@@ -34,6 +35,14 @@ void Drawer::Draw_Layer(DrawLayer layer)
 	case MAINMENU:
 	{
 		for (std::pair<Sprite*, Vector2D> item : layer_mainMenu)
+		{
+			drawSprite(item.first, item.second.X, item.second.Y);
+		}
+		break;
+	}
+	case MENUSCORE:
+	{
+		for (std::pair<Sprite*, Vector2D> item : layer_menuScore)
 		{
 			drawSprite(item.first, item.second.X, item.second.Y);
 		}
@@ -99,6 +108,7 @@ void Drawer::Clear()
 {
 	layer_background.clear();
 	layer_mainMenu.clear();
+	layer_menuScore.clear();
 	layer_player.clear();
 	layer_platforms.clear();
 	layer_projectiles.clear();
@@ -137,6 +147,14 @@ void Drawer::AddToDraw<Actor>(std::vector<Actor*> items, DrawLayer layer)
 		for (Actor* digit : items)
 		{
 			layer_score.push_back(std::make_pair(digit->GetSprite(), digit->GetSpriteLocation()));
+		}
+	}
+
+	if (layer == MENUSCORE)
+	{
+		for (Actor* digit : items)
+		{
+			layer_menuScore.push_back(std::make_pair(digit->GetSprite(), digit->GetSpriteLocation()));
 		}
 	}
 }

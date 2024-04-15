@@ -1,4 +1,78 @@
-﻿  Game_Framework.cpp
+﻿  glad.c
+  Actor.cpp
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(10,14): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(11,14): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(12,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(13,21): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(18,14): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(19,14): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(20,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(21,21): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(66,70): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(66,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(93,70): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(93,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(116,49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(117,49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(125,59): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(126,59): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(131,59): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(132,59): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(137,58): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(138,58): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(143,58): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(144,58): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(149,49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(150,49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(155,47): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(156,47): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(166,48): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(167,48): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(172,54): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(173,54): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(181,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(182,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(188,49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(189,49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(195,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(196,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(204,53): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(205,53): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(210,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(211,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(218,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(219,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(225,43): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(226,43): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(260,23): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(261,23): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(278,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Actor.cpp(279,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Drawer.cpp
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(30,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(30,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(38,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(38,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(46,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(46,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(54,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(54,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(62,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(62,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(69,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(69,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(76,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(76,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(83,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(83,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(90,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Drawer.cpp(90,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  GameData.cpp
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GameData.cpp(53,26): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GameData.cpp(54,27): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GameData.cpp(66,82): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GameData.cpp(195,50): warning C4305: 'argument': truncation from 'double' to 'irrklang::ik_f32'
+  Game_Framework.cpp
 D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Game_Framework.cpp(16,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
 D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Game_Framework.cpp(123,71): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Game_Framework.cpp(123,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
@@ -35,11 +109,63 @@ D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Game_Frame
 D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Game_Framework.cpp(564,60): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Game_Framework.cpp(642,60): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\Game_Framework.cpp(645,71): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  GLFW_Framework.cpp
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(108,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(109,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(110,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(110,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(111,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(111,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(112,55): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(112,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(113,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(113,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(143,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(143,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(144,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(144,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(176,32): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(176,26): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(176,20): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\GLFW_Framework.cpp(176,14): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  main.cpp
+  MyMath.cpp
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\MyMath.cpp(50,72): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\MyMath.cpp(50,26): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  PlayerCharacter.cpp
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(32,33): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(33,41): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(38,70): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(38,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(39,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(39,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(57,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(58,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(84,107): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(84,50): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(86,36): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(87,36): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(89,40): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(90,40): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(107,34): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(108,34): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(109,27): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(110,28): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(112,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(113,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(123,15): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(124,19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(141,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(171,11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(172,9): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(184,32): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(208,47): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(262,56): warning C4244: '-=': conversion from 'float' to 'unsigned int', possible loss of data
+D:\Programming\OpenGL_Projects\Game\Cloud_Jumper\Cloud_Jumper\Sources\PlayerCharacter.cpp(286,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
 LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
   Generating code
-  2 of 1818 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    7 functions had inline decision re-evaluated but remain unchanged
+  Previous IPDB not found, fall back to full compilation.
+  All 1819 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
 glfw3.lib(context.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(context.obj)' or at ''; linking object as if no debug info
 glfw3.lib(input.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(input.obj)' or at ''; linking object as if no debug info

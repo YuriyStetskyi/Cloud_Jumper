@@ -158,6 +158,17 @@ void Actor::SetSprite(DrawLayer drawLayer)
 
 		break;
 	}
+	case MENUSCORE:
+	{
+		if (digit >= 0)
+		{
+			actorSprite = GameData::menu_numbers.at(digit).sprite;
+			sprite_dimensions.X = GameData::menu_numbers.at(digit).width;
+			sprite_dimensions.Y = GameData::menu_numbers.at(digit).height;
+		}
+
+		break;
+	}
 	case PLATFORMS:
 	{
 		if (spriteType == "normal")

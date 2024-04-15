@@ -61,6 +61,7 @@ public:
 	Drawer drawer;
 	std::vector < std::pair<Sprite*, Vector2D> >layer_background;
 	std::unordered_map<int, Actor*> layer_mainMenu;
+	std::vector<Actor*> layer_menuScore;
 	std::unordered_map<int, Actor*> layer_platforms;
 	std::vector < PlayerCharacter* >layer_player;
 	std::unordered_map<int, Actor*> layer_projectiles;
@@ -73,6 +74,7 @@ public:
 	std::vector<Actor*> layer_scoreCoins;
 
 	std::unordered_map<int, Actor*> GetMainMenuToDraw();
+	std::vector<Actor*> GetMenuScoreToDraw();
 	std::unordered_map<int, Actor*>GeneratePlatforms(int count);
 	void HandlePlayerLogic();
 	void HandleDrawing();
@@ -121,9 +123,16 @@ public:
 
 	void SaveHighScore();
 	void LoadSaveFile();
+	void ShiftMenuSprites();
 	bool highScored;
 
+	
+	void ScaleSpriteToScreenSize(std::unordered_map<int, Actor*> mMenu);
 	std::string saveFile;
+
+	bool shouldScaleSprites;
+	bool shouldScaleUP;
+	bool shouldScaleDOWN;
 };
 
 

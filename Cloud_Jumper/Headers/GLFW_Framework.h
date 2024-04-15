@@ -15,8 +15,11 @@
 
 using namespace irrklang;
 
+
 extern int GLOBAL_SCREEN_WIDTH;
 extern int GLOBAL_SCREEN_HEIGHT;
+extern int GLOBAL_DISPLAY_WIDTH;
+extern int GLOBAL_DISPLAY_HEIGHT;
 extern int GLOBAL_FULLSCREEN;
 
 
@@ -155,7 +158,8 @@ public:
 
 	//sounds
 	static ISoundEngine* SoundEngine;
-	
+
+	void DisplayTips();
 };
 
 void calculateSpriteVertices(Sprite* sprite, float* vertices, int arrSize);
