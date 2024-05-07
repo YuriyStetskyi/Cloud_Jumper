@@ -128,6 +128,7 @@ public:
 
 	
 	void ScaleSpriteToScreenSize(std::unordered_map<int, Actor*> mMenu);
+	void ScaleSpriteToScreenSize(Actor* spr);
 	std::string saveFile;
 
 	bool shouldScaleSprites;

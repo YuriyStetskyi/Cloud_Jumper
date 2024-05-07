@@ -610,15 +610,6 @@ void setupGlobals(GLFW_Framework* framework)
 
 int run(GLFW_Framework* framework)
 {
-	/*framework->monitor = glfwGetPrimaryMonitor();
-	framework->mode = glfwGetVideoMode(framework->monitor);
-
-	if (framework->screen_fullscreen)
-	{
-		framework->screen_width = framework->mode->width;
-		framework->screen_height = framework->mode->height;
-	}*/
-
 	framework->runPreInit(framework->screen_width, framework->screen_height, framework->screen_fullscreen);
 	setupGlobals(framework);
 	if (framework->runInit(framework))

@@ -77,11 +77,9 @@ bool Game_Framework::Tick()
 		{
 			HandleDrawing_Menu();
 			HandleMainMenu();
-			//ScaleMainMenuSprites(1.6f);
 		}
 		else
 		{
-			//ScaleMainMenuSprites(1 / 1.6f);
 			HandleGameOver();
 			HandlePlayerLogic();
 
@@ -286,25 +284,33 @@ void Game_Framework::HandleMainMenu()
 	if (layer_mainMenu[0]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY))
 		&& layer_mainMenu[0]->spriteType != "button_Play_active")
 	{
-		layer_mainMenu[0] = new Actor(Vector2D(100, screen_height - 750), "button_Play_active", MAINMENU);
+		Actor* temp = new Actor(Vector2D(100, GLOBAL_DISPLAY_HEIGHT - 750), "button_Play_active", MAINMENU);
+		ScaleSpriteToScreenSize(temp);
+		layer_mainMenu[0] = temp;
 	}
 
 	if (layer_mainMenu[1]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY))
 		&& layer_mainMenu[0]->spriteType != "button_Quit_active")
 	{
-		layer_mainMenu[1] = new Actor(Vector2D(100, screen_height - 500), "button_Quit_active", MAINMENU);
+		Actor* temp = new Actor(Vector2D(100, GLOBAL_DISPLAY_HEIGHT - 500), "button_Quit_active", MAINMENU);
+		ScaleSpriteToScreenSize(temp);
+		layer_mainMenu[1] = temp;
 	}
 
 	if (!layer_mainMenu[0]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY))
 		&& layer_mainMenu[0]->spriteType != "button_Play_passive")
 	{
-		layer_mainMenu[0] = new Actor(Vector2D(100, screen_height - 750), "button_Play_passive", MAINMENU);
+		Actor* temp = new Actor(Vector2D(100, GLOBAL_DISPLAY_HEIGHT - 750), "button_Play_passive", MAINMENU);
+		ScaleSpriteToScreenSize(temp);
+		layer_mainMenu[0] = temp;
 	}
 
 	if (!layer_mainMenu[1]->GetBoxCollider().isHovered(Vector2D(mouseX, mouseY))
 		&& layer_mainMenu[0]->spriteType != "button_Quit_passive")
 	{
-		layer_mainMenu[1] = new Actor(Vector2D(100, screen_height - 500), "button_Quit_passive", MAINMENU);
+		Actor* temp = new Actor(Vector2D(100, GLOBAL_DISPLAY_HEIGHT - 500), "button_Quit_passive", MAINMENU);
+		ScaleSpriteToScreenSize(temp);
+		layer_mainMenu[1] = temp;
 	}
 
 }
@@ -312,16 +318,21 @@ void Game_Framework::HandleMainMenu()
 std::unordered_map<int, Actor*> Game_Framework::GetMainMenuToDraw()
 {
 	std::unordered_map<int, Actor*> mMenu;
-	mMenu.emplace(0, new Actor(Vector2D(100, screen_height - 750), "button_Play_passive", MAINMENU));
-	mMenu.emplace(1, new Actor(Vector2D(100, screen_height - 500), "button_Quit_passive", MAINMENU));
-	mMenu.emplace(2, new Actor(Vector2D(100, screen_height - 250), "highScore", MAINMENU));
+	mMenu.emplace(0, new Actor(Vector2D(100, GLOBAL_DISPLAY_HEIGHT - 750), "button_Play_passive", MAINMENU));
+	mMenu.emplace(1, new Actor(Vector2D(100, GLOBAL_DISPLAY_HEIGHT - 500), "button_Quit_passive", MAINMENU));
+	mMenu.emplace(2, new Actor(Vector2D(100, GLOBAL_DISPLAY_HEIGHT - 250), "highScore", MAINMENU));
 
 	if (highScored)
 	{
-		mMenu.emplace(3, new Actor(Vector2D(100, screen_height - 250), "newBest", MAINMENU));
+		mMenu.emplace(3, new Actor(Vector2D(100, GLOBAL_DISPLAY_HEIGHT - 250), "newBest", MAINMENU));
 	}
 
-	//ScaleSpriteToScreenSize(mMenu);
+	//these are spawned just for scaling in the beginning of game
+	mMenu.emplace(4, new Actor(Vector2D(9999,9999), "button_Play_active", MAINMENU));
+	mMenu.emplace(5, new Actor(Vector2D(9999,9999), "button_Quit_active", MAINMENU));
+	mMenu.emplace(6, new Actor(Vector2D(9999,9999), "newBest", MAINMENU));
+
+	ScaleSpriteToScreenSize(mMenu);
 	
 	return mMenu;
 }
@@ -680,7 +691,7 @@ void Game_Framework::SaveHighScore()
 		GameData::trackedHighScore = GameData::trackedScore;
 		for (Actor* item : layer_highScore)
 		{
-			Vector2D locationInUI(item->GetSpriteLocation().X + 650, item->GetSpriteLocation().Y + screen_height - 150);
+			Vector2D locationInUI(item->GetSpriteLocation().X + 650, item->GetSpriteLocation().Y + GLOBAL_DISPLAY_HEIGHT - 150);
 			item->SetSpriteLocation(locationInUI);
 		}
 
@@ -722,13 +733,22 @@ void Game_Framework::LoadSaveFile()
 		layer_highScore.push_back(new Actor(temp.GetSpriteLocation(), temp.digit, MENUSCORE));
 	}
 
+	bool first = false;
 	for (Actor* item : layer_highScore)
 	{
-		Vector2D locationInUI(item->GetSpriteLocation().X + 650, item->GetSpriteLocation().Y + screen_height - 165);
+		Vector2D locationInUI(item->GetSpriteLocation().X + 650, item->GetSpriteLocation().Y + GLOBAL_DISPLAY_HEIGHT - 165);
 		item->SetSpriteLocation(locationInUI);
+
+	}
+
+	for (Actor* item : layer_highScore)
+	{
+		ScaleSpriteToScreenSize(item);
 	}
 
 	ShiftMenuSprites();
+
+	
 	
 
 	GameData::trackedScore = 0;
@@ -759,16 +779,36 @@ void Game_Framework::ScaleSpriteToScreenSize(std::unordered_map<int, Actor*> mMe
 	float scaleFactorWidth = (float)GLOBAL_SCREEN_WIDTH / (float)GLOBAL_DISPLAY_WIDTH;
 	float scaleFactorHeight = (float)GLOBAL_SCREEN_HEIGHT / (float)GLOBAL_DISPLAY_HEIGHT;
 
+	//change buttons and highscore sprites sizes and location.
 	for (std::pair<int, Actor*> spr : mMenu)
 	{
-		float scaleFactorX = (float)spr.second->GetSpriteLocation().X / (float)GLOBAL_DISPLAY_WIDTH;
-		float scaleFactorY = (float)spr.second->GetSpriteLocation().Y / (float)GLOBAL_DISPLAY_HEIGHT;
+		int sprWidth = spr.second->GetSpriteDimensions().X * scaleFactorWidth;
+		int sprHeight = spr.second->GetSpriteDimensions().Y * scaleFactorWidth;
+		setSpriteSize(spr.second->GetSprite(), sprWidth, sprHeight);
+		spr.second->SetColliderDimensions(sprWidth, sprHeight);
 
-		int sprWidth = spr.second->GetSpriteDimensions().X;
-		int sprHeight = spr.second->GetSpriteDimensions().Y;
-		//setSpriteSize(spr.second->GetSprite(), sprWidth * scaleFactorWidth, sprHeight * scaleFactorWidth);
-		int scaledLocationX = GLOBAL_SCREEN_WIDTH * scaleFactorX;
-		int scaledLocationY = GLOBAL_SCREEN_HEIGHT * scaleFactorY;
-		spr.second->SetSpriteLocation(Vector2D(scaledLocationX, scaledLocationY));
+		int sprX = (spr.second->GetSpriteLocation().X * scaleFactorWidth);
+		int sprY = (spr.second->GetSpriteLocation().Y * scaleFactorHeight);
+
+		spr.second->SetSpriteLocation(Vector2D(sprX, sprY));
+
 	}
+}
+
+void Game_Framework::ScaleSpriteToScreenSize(Actor* spr)
+{
+	float scaleFactorWidth = (float)GLOBAL_SCREEN_WIDTH / (float)GLOBAL_DISPLAY_WIDTH;
+	float scaleFactorHeight = (float)GLOBAL_SCREEN_HEIGHT / (float)GLOBAL_DISPLAY_HEIGHT;
+
+	int sprWidth = spr->GetSpriteDimensions().X * scaleFactorWidth;
+	int sprHeight = spr->GetSpriteDimensions().Y * scaleFactorWidth;
+	setSpriteSize(spr->GetSprite(), sprWidth, sprHeight);
+
+	spr->SetColliderDimensions(sprWidth, sprHeight);
+
+	int sprX = (spr->GetSpriteLocation().X * scaleFactorWidth);
+	int sprY = (spr->GetSpriteLocation().Y * scaleFactorHeight);
+
+
+	spr->SetSpriteLocation(Vector2D(sprX, sprY));
 }

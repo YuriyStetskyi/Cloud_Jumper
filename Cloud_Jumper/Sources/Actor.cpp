@@ -288,8 +288,10 @@ void Actor::SetColliderDimensions(int X, int Y)
 	{
 		collider_dimensions.X = X;
 		collider_dimensions.Y = Y;
-	}
 
+		collider.WIDTH = X;
+		collider.HEIGHT = Y;
+	}
 }
 
 BoxCollider Actor::GetBoxCollider()
